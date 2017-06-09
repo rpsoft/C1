@@ -1,0 +1,155 @@
+%!TEX root = JournalChapter1.tex
+\begin{table*}[]
+\caption{Evaluation results for the state of the art models considered. (Bold denotes the best performing system)}
+\begin{small}
+
+
+	\begin{subtable}[b]{0.44\textwidth}
+
+	\caption{2011 collection} 
+
+	\begin{tabular}{l|c|c|c|c|c} 	
+	\cline{2- 6}
+	\multicolumn{1}{c}{}&\multicolumn{5}{c}{Precision} \\ 
+	\cline{2- 6} &
+	\textit{\textbf{@5}} & 
+	\textit{\textbf{@10}} & 
+	\textit{\textbf{@15}} & 
+	\textit{\textbf{@20}} & 
+	\textit{\textbf{@30}} 	
+	\tabularnewline
+	\hline
+	BM25 & 0.54 & 0.48 & 0.45 & 0.41 & 0.38\\
+	DFRee & 0.61 & \textbf{0.58} & \textbf{0.54} & \textbf{0.50} & 0.45\\
+	DLM & 0.50 & 0.47 & 0.45 & 0.42 & 0.37\\
+	HLM & 0.54 & 0.48 & 0.45 & 0.42 & 0.38\\
+	IDF & \textbf{0.63} & 0.56 & 0.52 & 0.49 & \textbf{0.46}\\
+	\hline	
+	\end{tabular}
+	 \end{subtable}
+	 \hspace{2em}
+ 	\begin{subtable}[b]{0.44\textwidth}
+ 	\caption{2012 Collection} 
+	\begin{tabular}{l|c|c|c|c|c} 
+	
+	\cline{2- 6}
+	\multicolumn{1}{c}{}&\multicolumn{5}{c}{Precision} \\ 
+	\cline{2- 6} &
+	\textit{\textbf{@5}} & 
+	\textit{\textbf{@10}} & 
+	\textit{\textbf{@15}} & 
+	\textit{\textbf{@20}} & 
+	\textit{\textbf{@30}} 
+	
+	\tabularnewline
+	\hline
+BM25 & 0.40 & 0.37 & 0.34 & 0.34 & 0.31 \\
+DFRee & \textbf{0.46} & \textbf{0.45} & \textbf{0.42} & \textbf{0.39} & \textbf{0.36}\\
+DLM & 0.34 & 0.33 & 0.32 & 0.29 & 0.27\\
+HLM & 0.38 & 0.37 & 0.35 & 0.33 & 0.31\\
+IDF & 0.44 & 0.39 & 0.36 & 0.36 & 0.34\\
+ 	\hline
+ 	
+ 	\end{tabular}
+ 
+ 	 \end{subtable} \vspace{0.6cm}
+
+ 	\begin{subtable}[b]{0.44\textwidth}
+ 	\caption{2013 collection} 
+
+	\begin{tabular}{l|c|c|c|c|c} 
+	
+	\cline{2- 6}
+	\multicolumn{1}{c}{}&\multicolumn{5}{c}{Precision} \\ 
+	\cline{2- 6} &
+	\textit{\textbf{@5}} & 
+	\textit{\textbf{@10}} & 
+	\textit{\textbf{@15}} & 
+	\textit{\textbf{@20}} & 
+	\textit{\textbf{@30}} 
+	
+	\tabularnewline
+	\hline
+BM25 & 0.58 & 0.51 & 0.46 & 0.42 & 0.38 \\
+DFRee & \textbf{0.67} & 0.60 & 0.55 & 0.51 & \textbf{0.45} \\
+DLM & 0.27 & 0.28 & 0.26 & 0.26 & 0.24 \\
+HLM & 0.44 & 0.38 & 0.35 & 0.33 & 0.31 \\
+IDF & 0.66 & \textbf{0.62} & \textbf{0.56} & \textbf{0.52} & \textbf{0.45} \\
+
+ 	\hline
+ 	\end{tabular}
+ 
+ 	\end{subtable}  
+ 		 \hspace{2em}
+ 	  	\begin{subtable}[b]{0.44\textwidth}
+ 	 
+ 	  	\centering
+ 	  	\caption{2014 collection} 
+ 	 
+ 	 	\begin{tabular}{l|c|c|c|c|c} 
+ 	 	
+ 	 	\cline{2- 6}
+ 	 	\multicolumn{1}{c}{}&\multicolumn{5}{c}{Precision} \\ 
+ 	 	\cline{2- 6} &
+ 	 	\textit{\textbf{@5}} & 
+ 	 	\textit{\textbf{@10}} & 
+ 	 	\textit{\textbf{@15}} & 
+ 	 	\textit{\textbf{@20}} & 
+ 	 	\textit{\textbf{@30}} 
+ 	 	
+ 	 	\tabularnewline
+ 	 	\hline
+	 	 BM25 & 0.69 & 0.62 & 0.58 & 0.57 & 0.52 \\
+	 	 DFRee & 0.73 & 0.68 & 0.65 & 0.63 & 0.60 \\
+	 	 DLM & 0.35 & 0.35 & 0.34 & 0.34 & 0.33 \\
+	 	 HLM & 0.55 & 0.49 & 0.46 & 0.44 & 0.41 \\
+	 	 IDF & \textbf{0.75} & \textbf{0.73} & \textbf{0.69} & \textbf{0.67} & \textbf{0.62} \\
+ 	 
+ 	  	\hline
+ 	  	\end{tabular}
+ 	  	
+ 	  	%\end{center}
+ 	  	%\end{footnotesize}
+ 	  	
+ 	  	 \end{subtable}
+
+ 	 \vspace{0.5cm}
+  	  	\begin{subtable}[b]{0.44\textwidth}
+ 	  	 	
+ 	  	  	\centering
+ 	  	  	\caption{All collections} 
+ 	  	 
+ 	  	 	\begin{tabular}{l|c|c|c|c|c} 
+ 	  	 	
+ 	  	 	\cline{2- 6}
+ 	  	 	\multicolumn{1}{c}{}&\multicolumn{5}{c}{Precision} \\ 
+ 	  	 	\cline{2- 6} &
+ 	  	 	\textit{\textbf{@5}} & 
+ 	  	 	\textit{\textbf{@10}} & 
+ 	  	 	\textit{\textbf{@15}} & 
+ 	  	 	\textit{\textbf{@20}} & 
+ 	  	 	\textit{\textbf{@30}} 
+ 	  	 	
+ 	  	 	\tabularnewline
+ 	  	 	\hline
+ 	 	 	 BM25 & 0.55 & 0.49 & 0.46 & 0.43 & 0.39 \\
+ 	 	 	 DFRee  & \textbf{0.62} & \textbf{0.57} & \textbf{0.54} & \textbf{0.51} & \textbf{0.46} \\
+ 	 	 	 DLM  & 0.36 & 0.35 & 0.34 & 0.32 & 0.30 \\
+ 	 	 	 HLM  & 0.47 & 0.43 & 0.40 & 0.38 & 0.35 \\
+ 	 	 	 IDF  & \textbf{0.62} & \textbf{0.57} & 0.53 & \textbf{0.51} & \textbf{0.46} \\
+ 	  	 
+ 	  	  	\hline
+ 	  	  	\end{tabular}
+ 	  	  	
+ 	  	  	%\end{center}
+ 	  	  	%\end{footnotesize}
+ 	  	 
+ 	  	  	%\vspace{-0.50cm}
+ 	  	  	
+ 	\end{subtable}
+ 	 
+ 	 
+  	\label{traditional}
+  	  \vspace{0.7cm}
+  	  \end{small}
+ \end{table*}

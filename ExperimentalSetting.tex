@@ -1,0 +1,88 @@
+%!TEX root = JournalChapter1.tex
+\section{Experimental Setting}
+\label{experiment}
+
+\noindent {\bf Datasets.} In this evaluation we have used the four collections from the TREC Microblog track. The 2011 and 2012 collections share the same corpus but have different topics and relevance assessments. On the other hand the 2013 and 2014 collections share the same corpus. The later corpus is an order of magnitude bigger than previous collections. However, the 2013 and 2014 relevance assessments are statiscally comparable to the 2012 track. Moreover, the ratio of documents \(\frac{relevant}{non-relevant}\) is much higher for the 2013, which can result in generally better retrieval performance than previous tracks by default. The 2014 on the other hand is closer in this ratio to the 2012 collection. In fact it has a considerably lower number of relevant documents per topic.
+
+In total there are 225 topics with query lengths ranging from 2 to 3 tokens, in line with the literature~\cite{teevan2011twittersearch}. Refer to Table \ref{collections} for an extended overview of these collections. \\
+
+
+%\noindent{\bf Parameter setting.} We performed parameter optimization w.r.t Precision@30 for all the retrieval models with free parameters. In Table \ref{traditional} we show the results for all considered retrieval models using the most optimal parameters across the three collections.\\
+
+
+
+
+
+\begin{table}[]
+
+
+
+\caption{Descriptive statistics for the collections being used in this study}
+
+ 
+
+  	\centering
+
+   \begin{tabular}{l||c|c|c|c} 
+
+
+
+    \hline
+
+    
+
+TREC Microblog track collection year & 2011 & 2012 & 2013 & 2014 \tabularnewline
+
+
+
+	\hline
+
+Number of topics   & 50 & 60 & 60 & 55 \tabularnewline
+
+        \hline
+
+\# documents & \multicolumn{2}{c|}{16M} & \multicolumn{2}{c}{260M}  \tabularnewline
+
+        \hline
+
+\# assessed documents   & 40855 &  73073  & 71279 & 57985 \tabularnewline
+
+        \hline
+
+\# assessed non-relevant documents & 38124 & 66893 & 62268 & 47340 \tabularnewline
+
+	\hline
+
+\# assessed relevant documents  & 2731 &  6180 & 9011 & 4753\tabularnewline
+
+	\hline
+
+ Ratio \(\frac{Relevant~Docs}{Non-Relevant~Docs}\) & 0.07 &  0.09 & 0.14 & 0.10\tabularnewline
+
+	\hline
+
+ Avg. relevant documents per topic   & 58.45 &  106.54 & 150.18 & 79.22 \tabularnewline
+
+	\hline
+
+   \end{tabular}
+
+
+   \label{collections}
+
+     \vspace{0.5cm}
+
+ \end{table}
+
+\input{traditional}
+
+\noindent{\bf Evaluation measures.} We pay attention to precision at different ranks, with a maximum cut-off point at rank 100. Future evidence is accepted only at the collection statistics level as agreed by TREC organisers disregarding any documents after the query issuing time when computing evaluation measures \footnote{https://github.com/lintool/twitter-tools/wiki/TREC-2013-Track-Guidelines}.\\
+
+\noindent{\bf Baseline selection.} Table \ref{traditional} contains evaluation results for the considered state of the art retrieval models when applied to Twitter corpora from the 2011, 2012 and 2013 Trec microblog collections. The models considered in this evaluation are TF-IDF (IDF)\footnote{\(Where~TF=1.\) Results worsen considerably if we do not set TF to a constant.}, BM25, DFRee, Hiemstra's LM (HLM) and Dirichlet's LM (DLM) since it was the baseline for the Microblog Tracks in 2013 and 2014. Moreover, we adhere to the implementation and default settings found within the Terrier IR platform~\cite{ounis2005terrier}. Finally, since DFRee and IDF are generally the best performing models we will use them as our main point of reference.
+
+%In the literature, models such as BM25 or Hiemstra's Language Model(HLM) are known to outperform simpler models such as TF-IDF \cite{robertson1995okapi}. 
+
+%It is interesting to observe how these models seem to behave unexpectedly and are more often than not outperformed by the simpler IDF. An exception is DFR which remains amongst the best performing models across all Twitter collections, as shown in Table \ref{traditional}. 
+
+%
+

@@ -1,0 +1,135 @@
+\documentclass[prodmode,acmtecs]{acmsmall} % Aptara syntax
+
+% Package to generate and customize Algorithm as per ACM style
+\usepackage[ruled]{algorithm2e}
+\renewcommand{\algorithmcfname}{ALGORITHM}
+\SetAlFnt{\small}
+\SetAlCapFnt{\small}
+\SetAlCapNameFnt{\small}
+\SetAlCapHSkip{0pt}
+\IncMargin{-\parindent}
+\usepackage{bibentry}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{makeidx}  % allows for indexgeneration
+\let\proof\relax
+\let\endproof\relax
+\usepackage{amsmath, amsthm, amssymb} 
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{url}
+\usepackage{underscore} 
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{enumitem}
+\usepackage{bibentry}
+\usepackage{tikz}
+\usepackage{pgf}
+\usetikzlibrary{arrows,automata,patterns,shapes,arrows}
+\usepackage[latin1]{inputenc}
+\usepackage{verbatim}
+\usepackage{pgfplots}
+\usepackage{subcaption}
+\pgfplotsset{compat=newest}
+\usepgfplotslibrary{ternary}
+\usepackage{{pgfplotstable}}
+\newcommand\abs[1]{\left|#1\right|}
+\newcommand\mentalnote[1]{[MentalNote:----\textcolor{blue}{#1}----]}
+\captionsetup{compatibility=false}
+
+\newcommand{\todo}[1]{\textcolor{red}{#1}}
+
+\newcommand{\argmax}{\operatornamewithlimits{arg\,max}}
+
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{\node[shape=rectangle,draw,inner sep=1.5pt] (char) {#1};}}
+
+
+% Metadata Information
+\acmVolume{9}
+\acmNumber{4}
+\acmArticle{39}
+\acmYear{2010}
+\acmMonth{3}
+
+% Document starts
+\begin{document}
+
+% Page heads
+\markboth{J. Rodriguez Perez et al.}{Microblogs Structure. Challenges and Opportunities}
+
+% Title portion
+\title{Microblogs Structure. Challenges and Opportunities}
+\author{Jesus Alberto Rodriguez Perez
+\affil{The University of Glasgow}
+Joemon M. Jose
+\affil{The University of Glasgow}
+}
+% NOTE! Affiliations placed here should be for the institution where the
+%       BULK of the research was done. If the author has gone to a new
+%       institution, before publication, the (above) affiliation should NOT be changed.
+%       The authors 'current' address may be given in the "Author's addresses:" block (below).
+%       So for example, Mr. Abdelzaher, the bulk of the research was done at UIUC, and he is
+%       currently affiliated with NASA.
+
+\begin{abstract}
+In recent years, microblog services such as Twitter have gained increasing popularity, leading to active research on how to effectively exploit its content. Microblog documents such as `tweets' differ in morphology with respect to more traditional documents such as web pages. Particularly, tweets are considerably shorter (140 characters) than web documents and contain contextual tags regarding the topic (hashtags), intended audience (mentions) of the document as well as links to external content (URLs). Unfortunately, state of the art retrieval models perform rather poorly in capturing the relevance of tweets, since they have been designed under very different conditions. 
+
+In this work, we are set to investigate the problems that state of the art retrieval models suffer when handling microblogs.
+Initially we simulate the behaviour of such retrieval models under microblog retrieval conditions. Based on our findings we devised a retrieval model specific for microblog documents, which significantly outperforms the state of the retrieval models. On the other hand we define a microblog document as a high-dimensional entity and study the structural differences between those documents deemed relevant and those non-relevant. Moreover we experiment with enhancing the behaviour of retrieval models by means of a re-ranking approach that accounts for the relative differences in these dimensions amongst tweets. Additionally we study the interactions between the different dimensions in terms of their order within the documents by modelling relevant and non-relevant tweets as state machines. These state machines are then utilised to produce scores which in turn are used for re-ranking. Our evaluation results show statistically significant improvements over the baseline in terms of precision at different cut-off points for both approaches. These results confirm that the relative presence of the different dimensions within a document and their ordering are connected with the relevance of microblogs.
+\end{abstract}
+
+\category{C.2.2}{Computer-Communication Networks}{Network Protocols}
+
+\terms{Microblog, State machines, Classification}
+
+\keywords{Information Retrieval, Structural Models, Document Dimentions}
+
+\acmformat{Jesus Rodriguez et al., 2017. Microblogs Structure. Challenges and Opportunities.}
+% At a minimum you need to supply the author names, year and a title.
+% IMPORTANT:
+% Full first names whenever they are known, surname last, followed by a period.
+% In the case of two authors, 'and' is placed between them.
+% In the case of three or more authors, the serial comma is used, that is, all author names
+% except the last one but including the penultimate author's name are followed by a comma,
+% and then 'and' is placed before the final author's name.
+% If only first and middle initials are known, then each initial
+% is followed by a period and they are separated by a space.
+% The remaining information (journal title, volume, article number, date, etc.) is 'auto-generated'.
+
+\begin{bottomstuff}
+%This work is supported by the National Science Foundation, under
+%grant CNS-0435060, grant CCR-0325197 and grant EN-CS-0329609.
+%
+%Author's addresses: G. Zhou, Computer Science Department,
+%College of William and Mary; Y. Wu  {and} J. A. Stankovic,
+%Computer Science Department, University of Virginia; T. Yan,
+%Eaton Innovation Center; T. He, Computer Science Department,
+%University of Minnesota; C. Huang, Google; T. F. Abdelzaher,
+%(Current address) NASA Ames Research Center, Moffett Field, California 94035.
+\end{bottomstuff}
+
+\maketitle
+
+\input{Introduction}
+
+\input{Background}
+
+\input{ExperimentalSetting}
+
+\input{RetrievalProblems}
+
+\input{MBInformativeness}
+
+\input{MBStructures}
+
+\input{Conclusions}
+
+
+% Bibliography
+\bibliographystyle{ACM-Reference-Format-Journals}
+\bibliography{bibtexshort}
+                             
+\received{February 2007}{March 2009}{June 2009}
+
+
+\end{document}

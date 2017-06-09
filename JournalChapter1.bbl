@@ -1,0 +1,336 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{00}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{}, \showDOI{}, and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showDOI}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showDOI #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showDOI      \undefined \def \showDOI       #1{{\tt DOI:}\penalty0{#1}\ }
+  \fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       #1{#1}          \fi
+
+\bibitem[\protect\citeauthoryear{Aboulnaga, L.~A.~Clarke, and
+  Cheriton}{Aboulnaga et~al\mbox{.}}{2012}]%
+        {younosFreq}
+{Younos Aboulnaga}, {Charles L.~A.~Clarke}, {and} {David~R. Cheriton}. 2012.
+\newblock \showarticletitle{Frequent Itemset Mining for Query Expansion in
+  Microblog Ad-hoc Search}.
+\newblock  (2012).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Amati, Amodeo, Bianchi, Marcone, Bordoni,
+  Gaibisso, Gambosi, Celi, Di~Nicola, and Flammini}{Amati
+  et~al\mbox{.}}{2011}]%
+        {amati2011fub}
+{Gianni Amati}, {Giuseppe Amodeo}, {Marco Bianchi}, {Giuseppe Marcone},
+  {Fondazione~Ugo Bordoni}, {Carlo Gaibisso}, {Giorgio Gambosi}, {Alessandro
+  Celi}, {Cesidio Di~Nicola}, {and} {Michele Flammini}. 2011.
+\newblock \showarticletitle{FUB, IASI-CNR, UNIVAQ at TREC 2011 Microblog
+  Track.}. In {\em TREC}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Amati, Joost, and Rijsbergen}{Amati
+  et~al\mbox{.}}{2003}]%
+        {amati2003probabilistic}
+{Gianni Amati}, {Cornelis Joost}, {and} {Van Rijsbergen}. 2003.
+\newblock \showarticletitle{Probabilistic models for information retrieval
+  based on divergence from randomness}.
+\newblock  (2003).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Basave, Varga, Rowe, Stankovic, and
+  Dadzie}{Basave et~al\mbox{.}}{2013}]%
+        {basave2013making}
+{Amparo Elizabeth~Cano Basave}, {Andrea Varga}, {Matthew Rowe}, {Milan
+  Stankovic}, {and} {Aba-Sah Dadzie}. 2013.
+\newblock \showarticletitle{Making Sense of Microposts (\# MSM2013) Concept
+  Extraction Challenge.}. In {\em \# MSM}. 1--15.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Damak, Pinel-Sauvagnat, Boughanem, and
+  Cabanac}{Damak et~al\mbox{.}}{2013}]%
+        {Damak:2013:ESF:2480362.2480537}
+{Firas Damak}, {Karen Pinel-Sauvagnat}, {Mohand Boughanem}, {and} {Guillaume
+  Cabanac}. 2013.
+\newblock \showarticletitle{Effectiveness of State-of-the-art Features for
+  Microblog Search}. In {\em Proceedings of the 28th Annual ACM Symposium on
+  Applied Computing} {\em (SAC '13)}. ACM, New York, NY, USA, 914--919.
+\newblock
+\showISBNx{978-1-4503-1656-9}
+\showDOI{%
+\url{http://dx.doi.org/10.1145/2480362.2480537}}
+
+
+\bibitem[\protect\citeauthoryear{Ferguson, O'Hare, Lanagan, Phelan, and
+  McCarthy}{Ferguson et~al\mbox{.}}{2012}]%
+        {ferguson2012investigation}
+{Paul Ferguson}, {Neil O'Hare}, {James Lanagan}, {Owen Phelan}, {and} {Kevin
+  McCarthy}. 2012.
+\newblock \showarticletitle{An investigation of term weighting approaches for
+  microblog retrieval}.
+\newblock In {\em Advances in Information Retrieval}. Springer, 552--555.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Gao, Cui, Liu, Liu, and Cheng}{Gao
+  et~al\mbox{.}}{2013}]%
+        {gaoictnet}
+{Jinhua Gao}, {Guoxin Cui}, {Shenghua Liu}, {Yue Liu}, {and} {Xueqi Cheng}.
+  2013.
+\newblock \showarticletitle{ICTNET at Microblog Track in TREC 2013}.
+\newblock  (2013).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Han, Li, Yang, Qi, Li, and Zhao}{Han
+  et~al\mbox{.}}{2012}]%
+        {hanhit}
+{Zhongyuan Han}, {Xuwei Li}, {Muyun Yang}, {Haoliang Qi}, {Sheng Li}, {and}
+  {Tiejun Zhao}. 2012.
+\newblock \showarticletitle{HIT at TREC 2012 Microblog Track}.
+\newblock {\em TREC Microblog 2012\/} (2012).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Hiemstra}{Hiemstra}{2001}]%
+        {model}
+{D. Hiemstra}. 2001.
+\newblock \showarticletitle{Using Language Models for Information Retrieval}.
+\newblock  (2001).
+\newblock
+\showURL{%
+\url{http://purl.org/utwente/36473}}
+
+
+\bibitem[\protect\citeauthoryear{Hiemstra and De~Vries}{Hiemstra and
+  De~Vries}{2000}]%
+        {hiemstra2000relating}
+{Djoerd Hiemstra} {and} {Arjen~P De~Vries}. 2000.
+\newblock \showarticletitle{Relating the new language models of information
+  retrieval to the traditional retrieval models}.
+\newblock  (2000).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Jabeur, Damak, Tamine, Cabanac,
+  Pinel-Sauvagnat, and Boughanem}{Jabeur et~al\mbox{.}}{2013}]%
+        {jabeuririt}
+{Lamjed~Ben Jabeur}, {Firas Damak}, {Lynda Tamine}, {Guillaume Cabanac}, {Karen
+  Pinel-Sauvagnat}, {and} {Mohand Boughanem}. 2013.
+\newblock \showarticletitle{IRIT at TREC Microblog Track 2013}.
+\newblock  (2013).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Kim, Yeniterzi, and Callan}{Kim
+  et~al\mbox{.}}{2012}]%
+        {kimovercoming}
+{Yubin Kim}, {Reyyan Yeniterzi}, {and} {Jamie Callan}. 2012.
+\newblock \showarticletitle{Overcoming Vocabulary Limitations in Twitter
+  Microblogs}.
+\newblock {\em TREC Microblog 2012\/} (2012).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Li, Zhang, Lv, Xie, Lin, Xu, Xu, Chen, and
+  Guo}{Li et~al\mbox{.}}{2011}]%
+        {li2011pris}
+{Y. Li}, {Z. Zhang}, {W. Lv}, {Q. Xie}, {Y. Lin}, {R. Xu}, {W. Xu}, {G. Chen},
+  {and} {J. Guo}. 2011.
+\newblock \showarticletitle{PRIS at TREC2011 Micro-blog Track}.
+\newblock  (2011).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Massoudi, Tsagkias, de~Rijke, and
+  Weerkamp}{Massoudi et~al\mbox{.}}{2011}]%
+        {massoudi2011incorporating}
+{Kamran Massoudi}, {Manos Tsagkias}, {Maarten de Rijke}, {and} {Wouter
+  Weerkamp}. 2011.
+\newblock \showarticletitle{Incorporating query expansion and quality
+  indicators in searching microblog posts}.
+\newblock In {\em Advances in Information Retrieval}. Springer, 362--367.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Metzler and Cai}{Metzler and Cai}{2011}]%
+        {metzler2011usc}
+{D. Metzler} {and} {C. Cai}. 2011.
+\newblock \showarticletitle{Usc/isi at trec 2011: Microblog track}. In {\em
+  Proceedings of the Text REtrieval Conference (TREC 2011)}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Nagmoti, Teredesai, and De~Cock}{Nagmoti
+  et~al\mbox{.}}{2010}]%
+        {nagmoti2010ranking}
+{Rinkesh Nagmoti}, {Ankur Teredesai}, {and} {Martine De~Cock}. 2010.
+\newblock \showarticletitle{Ranking approaches for microblog search}. In {\em
+  Web Intelligence and Intelligent Agent Technology (WI-IAT), 2010 IEEE/WIC/ACM
+  International Conference on}, Vol.~1. IEEE, 153--157.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Naveed, Gottron, Kunegis, and Alhadi}{Naveed
+  et~al\mbox{.}}{2011}]%
+        {naveed2011searching}
+{Nasir Naveed}, {Thomas Gottron}, {J{\'e}r{\^o}me Kunegis}, {and} {Arifah~Che
+  Alhadi}. 2011.
+\newblock \showarticletitle{Searching microblogs: coping with sparsity and
+  document quality}. In {\em Proceedings of the 20th ACM international
+  conference on Information and knowledge management}. ACM, 183--188.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Ounis, Amati, Plachouras, He, Macdonald, and
+  Johnson}{Ounis et~al\mbox{.}}{2005}]%
+        {ounis2005terrier}
+{Iadh Ounis}, {Gianni Amati}, {Vassilis Plachouras}, {Ben He}, {Craig
+  Macdonald}, {and} {Douglas Johnson}. 2005.
+\newblock \showarticletitle{Terrier information retrieval platform}.
+\newblock In {\em Advances in Information Retrieval}. Springer, 517--519.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Ounis, Macdonald, Lin, and Soboroff}{Ounis
+  et~al\mbox{.}}{2011}]%
+        {ounis2011overview}
+{I. Ounis}, {C. Macdonald}, {J. Lin}, {and} {I. Soboroff}. 2011.
+\newblock \showarticletitle{Overview of the TREC-2011 Microblog Track}. In {\em
+  Proceeddings of the 20th Text REtrieval Conference}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Perez, McMinn, and Jose}{Perez
+  et~al\mbox{.}}{2013}]%
+        {perezuniversity}
+{Jesus A~Rodriguez Perez}, {Andrew~J McMinn}, {and} {Joemon~M Jose}. 2013.
+\newblock \showarticletitle{University of Glasgow (UoG\_TwTeam) at TREC
+  Microblog}.
+\newblock  (2013).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Pre-Processing}{Pre-Processing}{2013}]%
+        {prebjut}
+{B Pre-Processing}. 2013.
+\newblock \showarticletitle{BJUT at TREC 2013 Microblog Track}.
+\newblock  (2013).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Robertson and Zaragoza}{Robertson and
+  Zaragoza}{2009}]%
+        {robertson2009probabilistic}
+{Stephen Robertson} {and} {Hugo Zaragoza}. 2009.
+\newblock {\em The probabilistic relevance framework: BM25 and beyond}.
+\newblock Now Publishers Inc.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Roelleke}{Roelleke}{2013}]%
+        {roelleke2013information}
+{Thomas Roelleke}. 2013.
+\newblock \showarticletitle{Information Retrieval Models: Foundations and
+  Relationships}.
+\newblock {\em Synthesis Lectures on Information Concepts, Retrieval, and
+  Services\/} {5}, 3 (2013), 1--163.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Sharifi, Hutton, and Kalita}{Sharifi
+  et~al\mbox{.}}{2010}]%
+        {5590862}
+{B. Sharifi}, {M.-A. Hutton}, {and} {J.K. Kalita}. 2010.
+\newblock \showarticletitle{Experiments in Microblog Summarization}. In {\em
+  Social Computing (SocialCom), 2010 IEEE Second International Conference on}.
+  49--56.
+\newblock
+\showDOI{%
+\url{http://dx.doi.org/10.1109/SocialCom.2010.17}}
+
+
+\bibitem[\protect\citeauthoryear{Siming~Zhu}{Siming~Zhu}{2013}]%
+        {pris2013}
+{Yajing Yuan Hui Wang Guang~Chen Siming~Zhu, Zhe~Gao}. 2013.
+\newblock \showarticletitle{PRIS at 2013 Microblog Track}.
+\newblock  (2013).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Singhal, Buckley, and Mitra}{Singhal
+  et~al\mbox{.}}{1996}]%
+        {singhal1996pivoted}
+{Amit Singhal}, {Chris Buckley}, {and} {Mandar Mitra}. 1996.
+\newblock \showarticletitle{Pivoted document length normalization}. In {\em
+  Proceedings of the 19th annual international ACM SIGIR conference on Research
+  and development in information retrieval}. ACM, 21--29.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Tao, Abel, Hauff, and Houben}{Tao
+  et~al\mbox{.}}{2012}]%
+        {tao2012makes}
+{Ke Tao}, {Fabian Abel}, {Claudia Hauff}, {and} {Geert-Jan Houben}. 2012.
+\newblock \showarticletitle{What makes a tweet relevant for a topic?}
+\newblock {\em Making Sense of Microposts (\# MSM2012)\/} (2012), 49--56.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Teevan, Ramage, and Morris}{Teevan
+  et~al\mbox{.}}{2011}]%
+        {teevan2011twittersearch}
+{J. Teevan}, {D. Ramage}, {and} {M.R. Morris}. 2011.
+\newblock \showarticletitle{\# TwitterSearch: a comparison of microblog search
+  and web search}. In {\em Proceedings of the fourth ACM international
+  conference on Web search and data mining}. ACM, 35--44.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Thomas}{Thomas}{2012}]%
+        {thomassearching}
+{Sarvnaz Karimi Jie Yin~Paul Thomas}. 2012.
+\newblock \showarticletitle{Searching and Filtering Tweets: CSIRO at the TREC
+  2012 Microblog Track}.
+\newblock  (2012).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Zhai and Lafferty}{Zhai and Lafferty}{2001}]%
+        {zhai2001study}
+{Chengxiang Zhai} {and} {John Lafferty}. 2001.
+\newblock \showarticletitle{A study of smoothing methods for language models
+  applied to ad hoc information retrieval}. In {\em Proceedings of the 24th
+  annual international ACM SIGIR conference on Research and development in
+  information retrieval}. ACM, 334--342.
+\newblock
+
+
+\end{thebibliography}

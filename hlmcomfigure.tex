@@ -1,0 +1,44 @@
+\begin{tikzpicture}[thick,scale=0.7, every node/.style={transform shape}]
+	\begin{axis}[
+		xlabel=Term Frequency,
+		ylabel=HLM score]
+	\addplot[color=red,mark=o] coordinates {
+		(1,0.436)
+		(2,0.770)
+		(3,1.041)
+		(4,1.270)
+		(5,1.467)
+		(6,1.640)
+		(7,1.795)
+		(8,1.934)
+		(9,2.062)
+		(10,2.179)
+	};
+	\addlegendentry{c = 0.15}
+	\addplot[color=blue,mark=o] coordinates {
+		(1,	7.63)
+		(2,8.63)
+		(3,9.21)
+		(4,9.63)
+		(5,9.95)
+		(6,10.21)
+		(7,10.43)
+		(8,10.63)
+		(9,10.80)
+		(10,11.08)
+		};
+	\addlegendentry{c = 0.99}
+	\end{axis}
+%	7.6366
+%	8.6330
+%	9.2167
+%	9.6312
+%	9.9527
+%	10.2155
+%	10.4378
+%	10.6303
+%	10.8001
+%	10.9520
+%	11.0895
+	
+\end{tikzpicture}

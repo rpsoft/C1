@@ -1,0 +1,19 @@
+%!TEX root = JournalChapter1.tex
+\section{Conclusions}
+
+\label{conclusion}
+
+
+
+In this work, we verified whether the scope and verbosity hypotheses still hold for microblog document retrieval. We hypothesise that, since microblog documents have a fixed maximum size, the scope and verbosity hypotheses do not hold, as they assume the author of the document is able to produce documents of any length. Furthermore we showed that there are no statistical differences in document length between relevant and non-relevant documents, therefore supporting our hypotheses.
+
+This finding highlights the need for alternative ways to capture relevance in microblog documents. Firstly we redefine a microblog document as a 4-dimensional entity. In the case of Tweets, the document contains 4 distinct dimensions namely, Text; Url; Mentions and Hashtags.
+
+Moreover, we proposed the notion of ``Informativeness'', which states that a microblog document's relevance or interestingness with respect to a user's information need expressed as a query, has a strong relationship with the structure of the document in terms of how much space is dedicated to each dimension.
+
+Secondly, we propose a technique which re-weights the retrieval score of microblog documents based on how much the space dedicated to each dimension diverges from the optimal. By doing so, we were able to significantly improve the behaviour of a state of the art retrieval model in the context of microblog retrieval.
+
+Finally, we extend our analysis to account for the different variations in the ordering of microblog dimensions. We devised state machines to model the structure of known relevant and non-relevant documents. Then we developed an approach that makes use of the probabilities provided by such state machines to produce scores which reflect on the structure of the documents. Our experimentation, shows with statistical significance that it is possible to utilise the structure of tweets to improve their ranking in an ad-hoc retrieval scenario.
+
+Future work will further expose the relations between these dimensions as well as finding further applications of the features described in this paper for other purposes, such as Automatic Query Expansion.\\
+
