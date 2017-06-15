@@ -704,9 +704,10 @@
   url = {http://dx.doi.org/10.1007/11408079_39}
 }
 
-@article{thomassearching,
-  title={Searching and Filtering Tweets: CSIRO at the TREC 2012 Microblog Track},
-  author={Thomas, Sarvnaz Karimi Jie Yin Paul}
+@Article{thomassearching,
+  author = {Thomas, Sarvnaz Karimi Jie Yin Paul},
+  title  = {Searching and Filtering Tweets: CSIRO at the TREC 2012 Microblog Track},
+  year   = {2012},
 }
 
 @inproceedings{sakaki2010earthquake,
@@ -757,9 +758,10 @@
   year={2011}
 }
 
-@article{younosFreq,
-  title={Frequent Itemset Mining for Query Expansion in Microblog Ad-hoc Search},
-  author={Aboulnaga, Younos and L. A. Clarke, Charles and Cheriton,  David R. }
+@Article{younosFreq,
+  author = {Aboulnaga, Younos and L. A. Clarke, Charles and Cheriton, David R.},
+  title  = {Frequent Itemset Mining for Query Expansion in Microblog Ad-hoc Search},
+  year   = {2012},
 }
 
 @incollection{ounis2005terrier,
@@ -901,10 +903,10 @@
   year={2013}
 }
 
-
-@article{pris2013,
-  title={PRIS at 2013 Microblog Track},
-  author={Siming Zhu, Zhe Gao, Yajing Yuan, Hui Wang, Guang Chen}
+@Article{pris2013,
+  author = {Siming Zhu, Zhe Gao, Yajing Yuan, Hui Wang, Guang Chen},
+  title  = {PRIS at 2013 Microblog Track},
+  year   = {2013},
 }
 
 @Article{perezuniversity,
@@ -913,19 +915,22 @@
   year   = {2013},
 }
 
-@article{prebjut,
-  title={BJUT at TREC 2013 Microblog Track},
-  author={Pre-Processing, B}
+@Article{prebjut,
+  author = {Pre-Processing, B},
+  title  = {BJUT at TREC 2013 Microblog Track},
+  year   = {2013},
 }
 
-@article{gaoictnet,
-  title={ICTNET at Microblog Track in TREC 2013},
-  author={Gao, Jinhua and Cui, Guoxin and Liu, Shenghua and Liu, Yue and Cheng, Xueqi}
+@Article{gaoictnet,
+  author = {Gao, Jinhua and Cui, Guoxin and Liu, Shenghua and Liu, Yue and Cheng, Xueqi},
+  title  = {ICTNET at Microblog Track in TREC 2013},
+  year   = {2013},
 }
 
-@article{jabeuririt,
-  title={IRIT at TREC Microblog Track 2013},
-  author={Jabeur, Lamjed Ben and Damak, Firas and Tamine, Lynda and Cabanac, Guillaume and Pinel-Sauvagnat, Karen and Boughanem, Mohand}
+@Article{jabeuririt,
+  author = {Jabeur, Lamjed Ben and Damak, Firas and Tamine, Lynda and Cabanac, Guillaume and Pinel-Sauvagnat, Karen and Boughanem, Mohand},
+  title  = {IRIT at TREC Microblog Track 2013},
+  year   = {2013},
 }
 
 @inproceedings{Damak:2013:ESF:2480362.2480537,
@@ -967,6 +972,20 @@ doi={10.1109/SocialCom.2010.17},}
   title     = {PRIS at TREC2011 Micro-blog Track},
   year      = {2011},
   booktitle = {TREC},
+}
+
+@InBook{Moshfeghi2013,
+  pages     = {14--25},
+  title     = {Understanding Relevance: An fMRI Study},
+  publisher = {Springer Berlin Heidelberg},
+  year      = {2013},
+  author    = {Moshfeghi, Yashar and Pinto, Luisa R. and Pollick, Frank E. and Jose, Joemon M.},
+  editor    = {Serdyukov, Pavel and Braslavski, Pavel and Kuznetsov, Sergei O. and Kamps, Jaap and R{\"u}ger, Stefan and Agichtein, Eugene and Segalovich, Ilya and Yilmaz, Emine},
+  address   = {Berlin, Heidelberg},
+  isbn      = {978-3-642-36973-5},
+  booktitle = {Advances in Information Retrieval: 35th European Conference on IR Research, ECIR 2013, Moscow, Russia, March 24-27, 2013. Proceedings},
+  doi       = {10.1007/978-3-642-36973-5_2},
+  url       = {http://dx.doi.org/10.1007/978-3-642-36973-5_2},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

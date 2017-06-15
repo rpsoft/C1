@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2014.5.26)  9 JUN 2017 11:46
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2014.5.26)  15 JUN 2017 14:36
 entering extended mode
 **JournalChapter1.tex
 (E:\dropbox\Dropbox\Journal_Chapter1\JournalChapter1.tex
@@ -957,38 +957,38 @@ ABD: EveryShipout initializing macros
 Package pgfplots notification 'compat/show suggested version=true': document ha
 s been generated with the most recent feature set (\pgfplotsset{compat=1.9}).
 
-LaTeX Font Info:    Try loading font information for U+lasy on input line 109.
+LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <8> not available
+(Font)              Font shape `OT1/pnc/b/n' tried instead on input line 77.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 110.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ulasy.fd"
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 109.
+LaTeX Font Info:    Try loading font information for U+msa on input line 110.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 109.
+LaTeX Font Info:    Try loading font information for U+msb on input line 110.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for OMS+pnc on input line 109.
+LaTeX Font Info:    Try loading font information for OMS+pnc on input line 110.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omspnc.fd"
 File: omspnc.fd 
 )
 LaTeX Font Info:    Font shape `OMS/pnc/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 109.
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 111.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 110.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 112.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1phv.fd"
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 111.
-LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <8> not available
-(Font)              Font shape `OT1/pnc/b/n' tried instead on input line 111.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 112.
 
 (E:\dropbox\Dropbox\Journal_Chapter1\Introduction.tex
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <9> not available
@@ -999,26 +999,21 @@ Overfull \vbox (72.27pt too high) has occurred while \output is active []
  [1{C:/Users/sephir/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 Non-PDF special ignored!
 
-] [2]
+]
 LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <10> not available
-(Font)              Font shape `OT1/pnc/b/n' tried instead on input line 26.
-)
+(Font)              Font shape `OT1/pnc/b/n' tried instead on input line 16.
+ [2])
 (E:\dropbox\Dropbox\Journal_Chapter1\Background.tex
-Underfull \hbox (badness 10000) in paragraph at lines 5--7
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 13--14
+Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
  []
 
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <9> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 16.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 14.
 [3]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 28.
+               Default added (so using `tbp') on input line 26.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 50--51
@@ -1026,17 +1021,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 50--51
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--57
+Underfull \hbox (badness 10000) in paragraph at lines 52--53
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 68--69
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 70--73
+Underfull \hbox (badness 10000) in paragraph at lines 54--57
 
  []
 
@@ -1044,7 +1034,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 70--73
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [4]
-Underfull \hbox (badness 10000) in paragraph at lines 87--88
+Underfull \hbox (badness 10000) in paragraph at lines 71--72
 
  []
 
@@ -1057,10 +1047,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 16.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [5]
 (E:\dropbox\Dropbox\Journal_Chapter1\traditional.tex
 
 LaTeX Warning: No positions in optional float specifier.
@@ -1091,7 +1077,7 @@ Overfull \hbox (17.51117pt too wide) in paragraph at lines 89--110
  []
 
 
-Overfull \hbox (17.51117pt too wide) in paragraph at lines 122--143
+Overfull \hbox (17.51117pt too wide) in paragraph at lines 123--144
  [][] 
  []
 
@@ -1100,14 +1086,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 79--80
 
  []
 
-
-Underfull \vbox (badness 3849) has occurred while \output is active []
-
- [6])
-(E:\dropbox\Dropbox\Journal_Chapter1\RetrievalProblems.tex [7]
+[5] [6]) (E:\dropbox\Dropbox\Journal_Chapter1\RetrievalProblems.tex [7]
 LaTeX Font Info:    Font shape `OT1/pnc/bx/it' in size <10> not available
 (Font)              Font shape `OT1/pnc/b/it' tried instead on input line 34.
- [8]
+
+[8]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 87.
@@ -1134,9 +1117,12 @@ Missing character: There is no w in font nullfont!
 LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <12> not available
 (Font)              Font shape `OT1/pnc/b/n' tried instead on input line 75.
 )
-Underfull \vbox (badness 6995) has occurred while \output is active []
+Underfull \vbox (badness 3471) has occurred while \output is active []
 
- [9]
+ [9
+
+
+]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 108.
@@ -1161,10 +1147,7 @@ Overfull \hbox (6.35994pt too wide) in paragraph at lines 110--122
 [][]   [] 
  []
 
-[10
-
-
-]
+[10]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 135.
@@ -1175,7 +1158,7 @@ LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 148.
 
 
-Underfull \vbox (badness 1688) has occurred while \output is active []
+Underfull \vbox (badness 2393) has occurred while \output is active []
 
  [11
 
@@ -1205,11 +1188,7 @@ Overfull \hbox (6.35994pt too wide) in paragraph at lines 188--201
 [][]   [] 
  []
 
-
-Underfull \vbox (badness 5288) has occurred while \output is active []
-
- [12]
-(E:\dropbox\Dropbox\Journal_Chapter1\dlmfigurec2.tex
+[12] (E:\dropbox\Dropbox\Journal_Chapter1\dlmfigurec2.tex
 Missing character: There is no p in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no p in font nullfont!
@@ -1247,7 +1226,7 @@ LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 279.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 5533) has occurred while \output is active []
 
  [14]
 (E:\dropbox\Dropbox\Journal_Chapter1\dlmfigureTFDL2500.tex
@@ -1280,7 +1259,7 @@ Overfull \hbox (6.35994pt too wide) in paragraph at lines 314--327
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1194) has occurred while \output is active []
 
  [15]
 (E:\dropbox\Dropbox\Journal_Chapter1\dfrTFDL.tex
@@ -1290,7 +1269,10 @@ Missing character: There is no p in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no p in font nullfont!
 Missing character: There is no t in font nullfont!
-) [16] [17]
+) [16]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [17]
 Underfull \hbox (badness 10000) in paragraph at lines 390--391
 
  []
@@ -1310,7 +1292,7 @@ LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 442.
 
 
-Underfull \vbox (badness 2126) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [19]
 
@@ -1324,12 +1306,9 @@ Missing character: There is no p in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no p in font nullfont!
 Missing character: There is no t in font nullfont!
-)
-(E:\dropbox\Dropbox\Journal_Chapter1\MBRM-Results.tex) [20]
-Underfull \vbox (badness 6792) has occurred while \output is active []
-
- [21])
-(E:\dropbox\Dropbox\Journal_Chapter1\MBInformativeness.tex [22]
+) [20]
+(E:\dropbox\Dropbox\Journal_Chapter1\MBRM-Results.tex))
+(E:\dropbox\Dropbox\Journal_Chapter1\MBInformativeness.tex [21] [22]
 Underfull \hbox (badness 10000) in paragraph at lines 39--40
 
  []
@@ -1370,7 +1349,7 @@ Overfull \hbox (52.68481pt too wide) in paragraph at lines 74--75
  []
 
 )
-Underfull \vbox (badness 1694) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [24]
 
@@ -1383,14 +1362,11 @@ File: kiviat.pdf Graphic file (type pdf)
 Package pdftex.def Info: kiviat.pdf used on input line 149.
 (pdftex.def)             Requested size: 327.20668pt x 268.22467pt.
 
-Underfull \vbox (badness 1661) has occurred while \output is active []
-
- [25]
 Underfull \hbox (badness 10000) in paragraph at lines 164--165
 
  []
 
-
+[25]
 Overfull \hbox (134.24475pt too wide) in paragraph at lines 198--199
  [][] 
  []
@@ -1405,12 +1381,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 252--253
 
  []
 
-[26 <E:/dropbox/Dropbox/Journal_Chapter1/kiviat.pdf>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 261--262
 
  []
 
-
+[26 <E:/dropbox/Dropbox/Journal_Chapter1/kiviat.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 275--276
 
  []
@@ -1431,8 +1407,11 @@ File: example.png Graphic file (type png)
  <use example.png>
 Package pdftex.def Info: example.png used on input line 15.
 (pdftex.def)             Requested size: 240.90184pt x 120.45091pt.
- [28]
-(E:\dropbox\Dropbox\Journal_Chapter1\automatas.tex
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[28] (E:\dropbox\Dropbox\Journal_Chapter1\automatas.tex
 <automatarelevant.pdf, id=136, 794.97pt x 614.295pt>
 File: automatarelevant.pdf Graphic file (type pdf)
 
@@ -1465,12 +1444,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 48--49
 
  []
 
-
-Overfull \vbox (0.86362pt too high) has occurred while \output is active []
-
-
 [29 <E:/dropbox/Dropbox/Journal_Chapter1/example.png>]
-Underfull \vbox (badness 4940) has occurred while \output is active []
+Underfull \vbox (badness 2875) has occurred while \output is active []
 
  [30 <E:/dropbox/Dropbox/Journal_Chapter1/automatarelevant.pdf> <E:/dropbox/Dro
 pbox/Journal_Chapter1/automatanonrelevant.pdf>])
@@ -1515,7 +1490,7 @@ Sec-ond In-ter-na-tional Con-fer-ence on\OT1/pnc/m/n/8 . 49--56.
 Here is how much of TeX's memory you used:
  28043 strings out of 493921
  678943 string characters out of 3144873
- 2521373 words of memory out of 3000000
+ 2519969 words of memory out of 3000000
  30718 multiletter control sequences out of 15000+200000
  44012 words of font info for 98 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
@@ -1551,7 +1526,7 @@ e1/urw/helvetic/uhvro8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/
 ncntrsbk/uncb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/ncntrsbk
 /uncbi8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/ncntrsbk/uncr8a
 .pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on JournalChapter1.pdf (33 pages, 728840 bytes).
+Output written on JournalChapter1.pdf (33 pages, 728965 bytes).
 PDF statistics:
  258 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
