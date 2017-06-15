@@ -3,25 +3,30 @@
 \label{background}
 In this Section we will introduce concepts and related literature to this work.
 
+\subsection{Retrieval Models}
+The first part of this work revolves around retrieval models and how their design affects their performance when retrieving microblogs. In our experimentation we include retrieval models such as: Okapi BM25 \cite{robertson2009probabilistic}; Divergence From Randomness (DFR) \cite{amati2003probabilistic}; Hiemstra's Language Model (HLM) \cite{model}; and Dirichlet Language Model (DLM) \cite{zhai2001study}. These models are introduced in more details in Section \ref{RMinvestigation}, and their behaviour described individually against microblog conditions. However we first introduce some basic background to ease the understanding of the following sections.
+
+\subsubsection{Probability of Relevance Framework} For many years researchers have developed their understanding on estimating the relevance of documents, thus leading to many models and definitions of relevance. One of the most representative works in this area of research is the Probability of Relevance Framework (PRF) \cite{roelleke2013information}. PRF is formulated by \(P(r|\hat{d},q)\), where \(r\) refers to relevance, \(q\) a given query and \(\hat{d}\) represents a document as a vector of features \(\hat{d} = (f_1,...f_n)\). Note that vector features can be any imaginable data. The main importance of this framework is the formalisation of relevance as a function of a given query and document vectors. This can be utilised as a framework for any probabilistic retrieval model, thus becoming the basis of numerous research works.
+
+\subsubsection{Document length normalization} \cite{singhal1996pivoted} has been employed by retrieval models to counterbalance the effects of longer documents, which may not necessarily add any new information to a topic, but are prone to contain higher term frequencies. In line with this effort, the design of BM25 by \cite{robertson2009probabilistic} involved the study of document characteristics, resulting in the definition of the \textbf{scope} and \textbf{verbosity} hypotheses. The \textbf{verbosity} hypotheses supports that some authors are more verbose than others, thus applying length normalization by dividing by the length of the document is beneficial to better capture relevance, as repetition of terms is superfluous. On the other hand, the \textbf{scope} hypotheses states that some authors simply have more to say, thus adding more relevant information to the topic and occupying more space. BM25 applies a soft normalisation that takes into account both cases.
+
 \subsection{Retrieval of Microblogs is Hard}
 Retrieval models are designed to rely on term frequency and document length as the variables to quantify whether a document is more important than other. From a very simplified perspective, a retrieval model will give more importance to a document that contains query terms more frequently than another document (Assuming similar document lengths). Likewise, when query terms appear the same number of times, a document will be deemed less or more informative based on the document lengths.
 
 However, as stated before, microblog documents are limited in length to 140 characters in the case of Twitter. This limitation obviously challenges the abovementioned assumptions, which unfortunately form the basis of the workings of most retrieval models in a way or another.
 
-The new medium and the low retrieval performance achieved by state of the art retrieval models gave way to an extensive area of research spearheaded by the Text Retrieval Conference (TREC) through its microblog track. Over recent years, numerous approaches have been proposed which significantly improve retrieval performance in diverse ways. \\
+The new medium and the low retrieval performance achieved by state of the art retrieval models gave way to an extensive area of research spearheaded by the Text Retrieval Conference (TREC) through its microblog track. Over recent years, numerous approaches have been proposed which significantly improve retrieval performance in diverse ways.
 
-\subsubsection{Microblog retrieval tracks}
+\subsection{TREC Microblog Retrieval Tracks}
 TREC organised a number of tracks over four consecutive years 2011-2014 in order to organise the research community and jointly address this retrieval problem. In order to evaluate the performance of the prospective solutions and allow for comparability they agreed on a collection of documents and a set of topics, as well as relevance judgements on those topics provided by NIST obtained through pooling.
 
 To this end they sampled two collections of documents from a Twitter stream over two different periods of time. The first collection was gathered in 2011 but was used for during both the 2011 and 2012 microblog tracks. Similarly, the second collection was gathered in 2013 and was used for both the 2013 and 2014 microblog tracks. Finally the number of topics varied between 50 and 60, but are 225 in total.
 
-
-\subsubsection{Microblog Tracks Results}
+%\subsubsection{Microblog Tracks Results}
 The summary results for each of the tracks are presented in Table \ref{summarytrec} for reference. Amongst the top performing participants we can find ~\cite{amati2011fub,li2011pris,metzler2011usc} for microblog 2011 and ~\cite{kimovercoming,younosFreq,hanhit} for 2012, which mostly employed query and document expansion techniques as well as learning to rank (L2R) approaches.
 Additionally, the 2013 track followed a similar trend producing works in the same categories L2R \cite{pris2013,gaoictnet}, query expansion \cite{prebjut,perezuniversity} and document expansion \cite{jabeuririt}.
 
 Moreover, the work by \cite{Damak:2013:ESF:2480362.2480537} produced a comprehensive summary of the features used by different approaches, and demonstrated how to successfully combine them using naive bayes as an L2R approach combining a number of features including hashtags, mentions, url presence, recency, etc.
-
 
 \begin{table}[]
 	\centering
@@ -43,20 +48,7 @@ Moreover, the work by \cite{Damak:2013:ESF:2480362.2480537} produced a comprehen
 \end{table}
 
 %\noindent {\bf Microblog Retrieval Issues.} 
-Work by \cite{thomassearching} studied the effects that preprocessing had on retrieval performance. Their findings showed that the best performance was achieved when applying all preprocessing steps, which include (i) language detection, (ii) Emotion removal, (iii) Lexical normalization, (iv) Mention Removal and (v) Link Removal. 
-
-Moreover, works by \cite{ferguson2012investigation,naveed2011searching} have identified that problems affecting retrieval models in microblogs are related to \textit{term frequency} and \textit{document length normalization}.
-
-However, no significant effort has been paid to understanding \textit{why are retrieval models really failing}. Reduced document length, and reduced term frequencies are often loosely blamed as we lack solid evidence of their interaction with the retrieval model estimations. We believe it is important to explore the interaction of such features within the retrieval models, not only because the better understanding would lead to better retrieval models, but also the domino effect it would produce on techniques which rely on retrieval models that could also benefit (E.g. Automatic Query Expansion).\\
-
-\noindent \textbf{Probability of Relevance Framework}. For many years researchers have developed their understanding on estimating the relevance of documents, thus leading to many works with many definitions. One of the most representative works in this area of research is the Probability of Relevance Framework (PRF) \cite{roelleke2013information}. PRF is given by \(P(r|\hat{d},q)\), where \(r\) refers to relevance, \(q\) a given query and \(\hat{d}\) represents a document as a vector of features \(\hat{d} = (f_1,...f_n)\). Note that vector features can be any imaginable data. The main importance of this framework is the formalisation of relevance w.r.t. a document which is the basis of numerous research works.\\
-
-\noindent \textbf{Document length normalization} \cite{singhal1996pivoted} has been employed by retrieval models to counterbalance the effects of longer documents, which may not necessarily add any new information to a topic, but are prone to contain higher term frequencies. 
-%An important study connecting document length with relevance was that by \cite{singhal1996pivoted}. In their work it was  concluded that retrieval performance improves if documents are given similar chances regardless of their document length. In fact most retrieval models deal with document length in order to not over-promote documents that contain higher term frequencies as a result of their length. 
-In line with this effort, the design of BM25 by \cite{robertson2009probabilistic} involved the study of document characteristics, resulting in the definition of the \textbf{scope} and \textbf{verbosity} hypotheses. The \textbf{verbosity} hypotheses supports that some authors are more verbose than others, thus applying length normalization by dividing by the length of the document is beneficial to better capture relevance, as repetition of terms is superfluous. On the other hand, the \textbf{scope} hypotheses states that some authors simply have more to say, thus adding more relevant information to the topic and occupying more space. BM25 applies a soft normalisation that takes into account both cases.\\ %These hypotheses are of utmost importance as they highlight the reasons behind longer documents.\\
-
-
-
+Work by \cite{thomassearching} studied the effects that preprocessing had on retrieval performance. Their findings showed that the best performance was achieved when applying all preprocessing steps, which include (i) language detection, (ii) Emotion removal, (iii) Lexical normalization, (iv) Mention Removal and (v) Link Removal. Additionally, works by \cite{ferguson2012investigation,naveed2011searching} have identified that problems affecting retrieval models in microblogs are related to \textit{term frequency} and \textit{document length normalization}.
 
 %Moreover, work by \cite{ferguson2012investigation} studied the effects of query length normalization and term frequency on the BM25 retrieval model whereas \cite{naveed2011searching} looked at these issues from a more generic perspective. Both their findings showed how query length normalization had an undesirable effect on retrieval performance of the systems they were evaluating, since document length in microblogs does not have the same meaning as in other context.
 
@@ -66,13 +58,16 @@ In line with this effort, the design of BM25 by \cite{robertson2009probabilistic
 
 %\noindent {\bf Other retrieval features.} The use of temporal evidences in conjunction with other features such as geographical locations has been studied by \cite{lappas2012spatiotemporal} and \cite{6222198} following different approaches. In addition to the temporal dimension, 
 
-\noindent \textbf{Making Sense Of Microposts.} The MSM workshop \cite{basave2013making} presented participants with a challenge. The objective was to build systems able to identify and extract concepts from microblog documents, in a semi-supervised manner. The participant systems were to categorise concepts as belonging to the categories: person, organisation, location and miscellaneous. A similar task is that of microblog summarisation \cite{5590862} in that tweets have to be processed and made sense of in order to produce a richer representation.
+\subsection{Making Sense Of Microposts}
+The MSM workshop \cite{basave2013making} presented participants with a challenge. The objective was to build systems able to identify and extract concepts from microblog documents, in a semi-supervised manner. The participant systems were to categorise concepts as belonging to the categories: person, organisation, location and miscellaneous. A similar task is that of microblog summarisation \cite{5590862} in that tweets have to be processed and made sense of in order to produce a richer representation.
 
-Amongst the works submitted to this workshop, we can highlight the work by Tao, Ke et al. \cite{tao2012makes}. In their work they perform an in depth analysis of both topic dependent and independent features for the MSM task. Some of the topic independent features consider the presence of hashtags, urls and the length of the documents to be in connection with the relevance of documents. In our work, we pay attention to the same features, but from a different angle, by looking how much space relative to the total characters in the document is dedicated to each of the microblogs elements. \\
+Amongst the works submitted to this workshop, we can highlight the work by Tao, Ke et al. \cite{tao2012makes}. In their work they perform an in depth analysis of both topic dependent and independent features for the MSM task. Some of the topic independent features consider the presence of hashtags, urls and the length of the documents to be in connection with the relevance of documents. In our work, we pay attention to the same features, but from a different angle, by looking how much space relative to the total characters in the document is dedicated to each of the microblogs elements.
 
-
-\noindent {\bf Other Microblog retrieval features.} 
+\subsection{\bf Other Microblog retrieval features} 
 Work by \cite{massoudi2011incorporating} explored the use of other features to improve ad-hoc retrieval. These features include emoticons, hyperlinks, shouting, capitalization, retweets and followers. 
 Work by \cite{nagmoti2010ranking} extended the study concerning the use of social features such as the number of followers and followees to enhance ad-hoc retrieval performance.
 %Weng et al. \cite{EventDetection} proposed that clusters of features which show bursty behaviour in close temporal proximity suggest an event. Their system builds signals for individual features using wavelet analysis for each of the terms. Events are then formed by clustering terms with similar behaviour. 
 While all these works attempt to exploit some microblog features or augment them with external resources, they do not try to explain how these features relate to the relevance of microblog documents. In our work, we consider features based purely on microblog characteristics, explain their relationship with relevance, and finally use those features that seem beneficial to improve the behaviour of a state of the art retrieval model.
+
+\subsection{Understanding Microblogs}
+We believe that no significant progress has been made to understand \textit{why are retrieval models failing} in microblogs. Due to their limited size,  document length and term frequencies are often loosely blamed with the underperformance of retrieval models. We believe it is important to explore, and properly assess the interaction of such features. Better understanding could lead to better performance of retrieval models, or new models altogether, which are the starting point for many techniques commonly used in microblog retrieval (E.g. Automatic Query Expansion).
