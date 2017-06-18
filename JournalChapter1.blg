@@ -1,6 +1,5 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: JournalChapter1.aux
 A level-1 auxiliary file: bm25TFDL.aux
-A level-1 auxiliary file: hlmcomfigure.aux
 The style file: ACM-Reference-Format-Journals.bst
 Database file #1: bibtexshort.bib
 Too many commas in name 1 of "Siming Zhu, Zhe Gao, Yajing Yuan, Hui Wang, Guang Chen" for entry pris2013
@@ -64,9 +63,9 @@ Warning--empty address in nagmoti2010ranking
 Warning--empty publisher in naveed2011searching
 Warning--empty address in naveed2011searching
 Warning--empty address in ounis2005terrier
-Warning--empty publisher in ounis2011overview
-Warning--empty address in ounis2011overview
-Warning--page numbers missing in both pages and numpages fields in ounis2011overview
+Warning--empty publisher in terrierir
+Warning--empty address in terrierir
+Warning--page numbers missing in both pages and numpages fields in terrierir
 Warning--no journal in perezuniversity
 Warning--no number and no volume in perezuniversity
 Warning--page numbers missing in both pages and numpages fields in perezuniversity

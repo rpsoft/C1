@@ -219,12 +219,14 @@
 \newblock
 
 
-\bibitem[\protect\citeauthoryear{Ounis, Macdonald, Lin, and Soboroff}{Ounis
-  et~al\mbox{.}}{2011}]%
-        {ounis2011overview}
-{I. Ounis}, {C. Macdonald}, {J. Lin}, {and} {I. Soboroff}. 2011.
-\newblock \showarticletitle{Overview of the TREC-2011 Microblog Track}. In {\em
-  Proceeddings of the 20th Text REtrieval Conference}.
+\bibitem[\protect\citeauthoryear{Ounis, Amati, Plachouras, He, Macdonald, and
+  Lioma}{Ounis et~al\mbox{.}}{2006}]%
+        {terrierir}
+{I. Ounis}, {G. Amati}, {V. Plachouras}, {B. He}, {C. Macdonald}, {and} {C.
+  Lioma}. 2006.
+\newblock \showarticletitle{{Terrier: A High Performance and Scalable
+  Information Retrieval Platform}}. In {\em Proceedings SIGIR'06 Workshop (OSIR
+  2006)}.
 \newblock
 
 
