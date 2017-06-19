@@ -386,24 +386,12 @@ Recall that users of microblog services such as Twitter, strive to fit their mes
 
 Summarising, we believe that DFRee's behaviour is key to better understand why most retrieval models fail to capture the relevance of microblogs. Particularly important is the \textit{saturation point} behaviour as a function of TF and DL. We can observe that promoting documents that are longer, whilst penalising documents with higher TF values than 2 may be a better fit to capture microblogs' relevance.
 
-%This mechanism ensures no over/under estimations of the value of microblog documents when TF is disproportionately high with respect to DL and vice-versa.
-
-\section{Towards a microblog retrieval model}
-In this section firstly we further extend our experimentation on the above-mentioned retrieval models. Secondly we gather all our findings to produce a retrieval model specifically tailored to microblog retrieval.
-
-\subsection{Score differences and Harmonisation}
-So far we have introduced a set of representative retrieval models, and discussed how they behave when facing microblog-like conditions. We have mainly done so by simulating the scores produced by each model, when fixing all parameters except TF and DL which are the variables to be considered. In the above-mentioned experiments, we have observed a very interesting relationship between TF, DL and the score given to the terms. In most retrieval models performance seems to increase when we overestimate the values of TF and DL, thus forcing the models into an area of values where the score differences with respect to TF and DL are much lower.
-
-Table \ref{stdevharmonising} holds a summary of the results for all retrieval models in their various configurations with respect to Precision@30. Additionally the third column holds the standard deviation of the simulated scores produced by the retrieval models. As it can be easily observed that the possible document scores are much closer together for those configurations that improve a retrieval model's performance. In fact there seems to be a strong negative statistical correlation between the standard deviation and the performance achieved by the retrieval models.
-
-In other words, reducing the standard deviation of the possible scores for most of the retrieval models is connected with significantly better performance. These observations motivate the following hypothesis:\\
-
-\textbf{\textquotedblleft The range of scores produced by retrieval models when ranking microblogs can be unfairly different due to the retrieval model's behaviour with respect to scarce TF and DL values\textquotedblright}.\\
-
+\subsection{Harmonising Score differences}
+So far we have introduced a set of representative retrieval models, and discussed how they behave when facing microblog-like conditions. We have mainly simulated the spectrum of scores produced w.r.t. TF and DL by each model when fixing all other parameters. Moreover we have observed that retrieval models performance seems to increase when we overestimate the values of TF and DL, thus forcing the models to return values of lesser score differences.
 
 
 \begin{table}[]
-	\caption{Behaviour when harmonising score differences.}
+	\caption{Behaviour when harmonising score differences.(All collections together.)}
 	\centering
 	\begin{tabular}{l|c|c|c} 	
 		\textit{\textbf{Model}} & 
@@ -423,30 +411,43 @@ In other words, reducing the standard deviation of the possible scores for most 
 		BM25 & \(b=0.75, k=1.2\) & 0.1274 & 0.3948\\
 		BM25 & \(b=0.75, k=0.7\) & 0.0927 & 0.4399\\
 		BM25 & \(b=0.9, k=0.1\) & 0.0181 & 0.4580\\
-		\hline
-		DFRee & NA & 0.2268 & 0.4614\\
+%		\hline
+%		DFRee & NA & 0.2268 & 0.4614\\
 		\hline
 		\hline    
-		PEARSON & \multicolumn{2}{|c}{-0.70 or -0.58}    \\
-		KTau & \multicolumn{2}{|c}{-0.66 or -0.5555}    \\
+		PEARSON & \multicolumn{2}{|c}{-0.70}    \\ %(-0.58 including DFRee)
+		KTau & \multicolumn{2}{|c}{-0.66}    \\ %(-0.56 including DFRee)
 	\end{tabular}
 	\label{stdevharmonising}
 \end{table}
 
-If this hypothesis is true, we should be able to achieve similar results using a different technique to reduce the standard deviation of the scores produced by the different retrieval models. To this end we produced the results in Table \ref{loggedRMS}. This Table holds performance metrics for all retrieval models with their standard configurations, however each of the scores computed for each document have been normalised using a logarithm base 2.
+Table \ref{stdevharmonising} holds a summary of the results for all retrieval models with various configurations with respect to Precision@30. Additionally the third column holds the standard deviation of the simulated scores produced by the retrieval models in microblog conditions\footnote{where $DL<=30$ and $TF<=15$}. 
 
-As an example, the formulation for HLM would look as follows: 
+As it can be easily observed, the possible document scores are much closer together for those configurations that improve a retrieval model's performance. In fact there is a strong statistical correlation (last two columns) between reducing the standard deviation and improving the retrieval performance of the models. This observation motivates the following hypothesis:
+
+\begin{quotation}
+\begin{quote}
+\textbf{The range of scores produced by retrieval models can be unfairly different due to its behaviour w.r.t. the scarcity of TF and DL values in microblog conditions.}
+\end{quote}
+\end{quotation}
+
+
+If this hypothesis is true, we should be able to achieve similar positive results if we reduce the scoring differences of a retrieval model by means of any other technique. To this end we decided to apply a base two logarithm, to the scoring function of each retrieval model. As an example, the formulation of HLM would be as follows: 
 
 \begin{small}
 	\begin{align}
 	\label{hlmformulalog}
-	\text{HLM}(D,Q) &=  \sum_{i=1}^{n} log_2 \left[ \log_2 \left[ 1 + \frac{c \cdot f(q_i, D) \cdot ntoks }{ (1-c) \cdot f(q_i, C) \cdot |D|} \right] \right]
+	\text{HLM}(D,Q) &=  \sum_{i=1}^{n} \bf{log_2} \left[ \log_2 \left[ 1 + \frac{c \cdot f(q_i, D) \cdot ntoks }{ (1-c) \cdot f(q_i, C) \cdot |D|} \right] \right]
 	\end{align}
 \end{small}
 
-As we can observe in Table \ref{loggedRMS} the results for DLM, HLM and BM25 are significantly better than standard (Table \ref{stdevharmonising}), whereas DFRee performs marginally worse than its default form and IDF remains unaffected. 
+\noindent where the added logarithm function can be found next to the summation sign.
 
-\todo{We can conclude that based on this evidence most retrieval models are not prepared to effectively capture the relevance of microblogs. The verbose and scope hypotheses, which serves as inspiration to most retrieval models, do not hold for microblog documents. Additionally, the main reason points to their over-sensitiveness to low values of term frequency and document length. This sensitiveness often produces a high degree of score differences amongst the ranked documents which ultimately negatively affects performance.}
+Table \ref{loggedRMS} holds a comparison between the default P@30 achieved by each model and the same model with the log function applied to it. As we can observe the results for DLM, HLM and BM25 perform significantly better than their standard, whereas DFRee performs marginally worse and IDF remains unaffected.
+
+From these experiments we can conclude that state of the art retrieval models produce unfair scores due to the scarcity of TF and DL during microblog retrieval. This effect can be mitigated by employing techniques to reduce possible score differences such as applying a log function. To conclude, when ranking microblog documents our models should consider the existing TF and DL evidence, but should also be conservative when managing the overall effects on the produced scores.
+%
+%\todo{We can conclude that based on this evidence most retrieval models are not prepared to effectively capture the relevance of microblogs. The verbose and scope hypotheses, which serves as inspiration to most retrieval models, do not hold for microblog documents. Additionally, the main reason points to their over-sensitiveness to low values of term frequency and document length. This sensitiveness often produces a high degree of score differences amongst the ranked documents which ultimately negatively affects performance.}
 
 \begin{table}[]
 	
@@ -470,111 +471,3 @@ As we can observe in Table \ref{loggedRMS} the results for DLM, HLM and BM25 are
 	\end{tabular}
 	\label{loggedRMS}
 \end{table}
-
-%
-%\subsection{Conclusions about retrieval models}
-%
-%RM and us do not understand microblogs. In the following chapters we will try and develop this understanding.
-%
-
-\subsection{MBRM: A Microblogs Retrieval Model}
-
-In previous sections, we have presented a number of problems faced by retrieval models when dealing with microblogs. We have shown empirical evidence of their existence by improving the performance of state of the art retrieval models. However we can further investigate these issues by devising a retrieval model, which relies on what we have learnt so far about microblogs. To this end, we would like to introduce a ``MicroBlogs Retrieval Model'', namely MBRM.
-
-MBRM is made up of two main components which deal with document based information attached to an IDF component which represents the collection's information. Similarly to the formulation of BM25, the two main components of MBRM deal with document length and query term frequency. In fact we came up with a formulation to represent the behaviour we observed as being the best for microblog retrieval. The first component deals with the document length and is given by the following logistic distribution:
-
-\begin{equation}
-DLComp(DL)={\frac  {c_1}{1+{a_1\mathrm  e}^{{-b_1DL}}}}
-\end{equation}
-
-where \(a_1, b_1\) and \(c_1\) are parameters to control the growth, maximum and starting point of the distribution. Secondly, the following component given by a gaussian distribution deals with the effect of TF over the final score produced by MBRM:
-
-\begin{equation}
-TFComp\left(TF\right)=a_2e^{-{\frac {(TF-b_2)^{2}}{2c_2^{2}}}}
-\end{equation}
-
-where \(a_2, b_2\) and \(c_2\) are parameters similar parameters to those found in the previous function. These functions were chosen as they offer good control over the curves, and their values can be bound between 1 and 0 so we do not need to normalise values when combining them. The final formulation for MBRM is given by: 
-
-\begin{equation}
-MBRM(D,Q) = \sum_{i=1}^{|Q|} (1-\alpha)*\text{IDF}(q_i) + \alpha * DLComp(|D|) * TFComp(q_i)
-\end{equation}
-
-which can be also expressed as:
-
-\begin{equation}
-MBRM(D,Q) = \sum_{i=1}^{|Q|} (1-\alpha)*\text{IDF}(q_i) + \alpha * \left({\frac  {c_1}{1+{a_1\mathrm e}^{{-b_1DL(|D|)}}}} \right) * \left(a_2e^{-{\frac {(TF(q_i)-b_2)^{2}}{2c_2^{2}}}}\right) 
-\end{equation}
-
-\begin{table}[]
-	\caption{MBRM recommended parameter settings} 
-	\centering
-	\begin{tabular}{l|c} 	
-		\hline
-		\textbf{Parameter} & \textbf{Recommended values} \\
-		\hline
-		\centering					 
-		$a_1$ & 1.5 \\
-		$b_1$ & 0.3 \\
-		$c_1$ & 1.0 \\
-		\hline
-		$a_2$ & 1.0 \\
-		$b_2$ & 2.0 \\
-		$c_2$ & 6.0 \\
-		\hline
-	\end{tabular}
-	\label{recommended settings}
-\end{table}
-
-Figure \ref{microblogRM} shows a simulation of the behaviour of MBRM in terms of TF and DL. The parameters used to for both components (DLComp and TFComp) are shown in Table \ref{recommended settings}. In Figure \ref{microblogRM} we can observe how the values obtained on the TF axis decrease slowly for the initial values of TF, but rapidly accelerate in their descent to then settle near 0. This behaviour is similar to that of DFRee in which the highest importance is given to TF when near the average ~2 and then it is reduced as it increases. High TF values are most likely than not associated with spam or unimportant documents, since actual users struggling to fit their content in the 140 characters limit are unlikely to repeat words. Although this is not always the case, thus the slow descent for low values of TF.
-
-\begin{figure}
-	\begin{subfigure}[]{0.5\textwidth}
-		\caption{Doc. length (DL) and Term Frequency (TF)}
-		\input{MBRM-GAUSS-TF}
-		\label{microblogRM}
-	\end{subfigure} 
-	~
-	\begin{subfigure}[]{0.5\textwidth}
-		\caption{MBRM effects of $\alpha$ on each fold.}
-		\input{MBRM-Results}
-		\label{microblogRM-param}
-	\end{subfigure} 
-	\caption{MBRM: A Microblog Retrieval Model}
-\end{figure} 
-
-Now we pay attention to the values in terms of the $DL$ axis. We can observe that they increase in a soft slope as we traverse $DL$. Unlike $DFRee$, the slope is always incremental. The idea behind is that no document is significantly more important when it contains a single word more. However it should be more important since the more terms in a document the more comprehensive the document should be, particularly in terms of the amount of information encoded in it, regardless of the character limitation.
-
-Figure \ref{microblogRM-param} shows the results of parameter optimisation by means of a 5-fold cross-validation. The whole set of topics is subdivided into 5 groups where 4 are used for training and one for testing. The roles of each group are alternated resulting in 5 different experiments. It can very easily be observed that the most optimal values for the mixing parameter $\alpha$ are near $0.20$.
-
-
-Table \ref{MBRMPerformance} shows the performance results obtained for MBRM in terms of Precision at different levels with respect to IDF and DFRee. As it can be observed, the performance is always significantly superior than the baselines. The main difference with respect to IDF is obviously that it takes advantage of document statistics, where IDF does not. However the main difference with respect to DFRee is that documents longer than 15 terms are not penalised following the aforementioned rationale. These results not only demonstrate that we can make effective use of document statistics unlike previously thought by other authors \cite{naveed2011searching}, but also that the scope hypotheses still holds for small documents. In other words, the authors of the documents will attempt to encode as much information as possible even with the obvious document limitations. This contradicts our findings in Subsection \ref{bm25case} however we believe that in the particular case of BM25, document length has a much more aggressive effect on the scores, thus resulting in a misleading behaviour.
-
-\begin{table}[b] 	
-	  	  	\centering
-	  	  	\caption{Performance of MBRM on all collections (Where * $p<0.05$ and ** $p<0.01$ respectively, with respect to IDF and DFRee)} 
-	  	 	\begin{tabular}{l|c|c|c|c|c} 	  	 	
-	  	 	\cline{2- 6}
-	  	 	\multicolumn{1}{c}{}&\multicolumn{5}{c}{Precision} \\ 
-	  	 	\cline{2- 6} &
-	  	 	\textit{\textbf{@5}} & 
-	  	 	\textit{\textbf{@10}} & 
-	  	 	\textit{\textbf{@15}} & 
-	  	 	\textit{\textbf{@20}} & 
-	  	 	\textit{\textbf{@30}} 
-	  	 	\tabularnewline
-	  	 	\hline
-	 	 	 DFRee  & 0.62 & 0.57 & 0.54 & 0.51 & 0.46 \\
-	 	 	 IDF  & 0.62 & 0.57 & 0.53 & 0.51 & 0.46 \\
-	 	 	 \hline
- 	 	 	 \hline
-  	  	 	 MBRM ($\alpha=0.20$)  & \textbf{0.64*} & \textbf{0.59*} & \textbf{0.56**} & \textbf{0.53**} & \textbf{0.48*} \\
-	  	  	\hline
-	  	  	\end{tabular}
-	  	  	\label{MBRMPerformance}	
-\end{table}
-
-
-The verbose hypotheses however seems not to hold, as authors are very careful to come up with specific words to effectively encode their message. Thus documents are not generally longer due to style differences, or the verbosity of the author, but it is rather a reflection of the author's capacity to encode rich information in such limited constraints. And this is what is ultimately captured by our MBRM retrieval model.
-
-
-Final note, the previous experiment where we apply a logarithmic function to the scores of the retrieval models, reduce the effect of the possible values of DL. This can also be interpreted as being closer to the behaviour of MBRM where increasing DL also increases the score, which provides the best experimental results.
