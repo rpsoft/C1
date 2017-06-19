@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2014.5.26)  19 JUN 2017 03:05
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2014.5.26)  19 JUN 2017 03:41
 entering extended mode
 **JournalChapter1.tex
 (E:\dropbox\Dropbox\Journal_Chapter1\JournalChapter1.tex
@@ -957,37 +957,37 @@ Package pgfplots notification 'compat/show suggested version=true': document ha
 s been generated with the most recent feature set (\pgfplotsset{compat=1.9}).
 
 LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <8> not available
-(Font)              Font shape `OT1/pnc/b/n' tried instead on input line 77.
-LaTeX Font Info:    Try loading font information for U+lasy on input line 110.
+(Font)              Font shape `OT1/pnc/b/n' tried instead on input line 79.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 115.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ulasy.fd"
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 110.
+LaTeX Font Info:    Try loading font information for U+msa on input line 115.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 110.
+LaTeX Font Info:    Try loading font information for U+msb on input line 115.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for OMS+pnc on input line 110.
+LaTeX Font Info:    Try loading font information for OMS+pnc on input line 115.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omspnc.fd"
 File: omspnc.fd 
 )
 LaTeX Font Info:    Font shape `OMS/pnc/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 110.
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 112.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 115.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 117.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1phv.fd"
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 112.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 117.
 
 (E:\dropbox\Dropbox\Journal_Chapter1\Introduction.tex
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <9> not available
@@ -1001,11 +1001,8 @@ Non-PDF special ignored!
 ]
 LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <10> not available
 (Font)              Font shape `OT1/pnc/b/n' tried instead on input line 16.
- [2]
-
-LaTeX Warning: Reference `discussion' on page 3 undefined on input line 41.
-
 ) (E:\dropbox\Dropbox\Journal_Chapter1\Background.tex
+[2]
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <9> not available
 (Font)              Font shape `OT1/phv/m/sl' tried instead on input line 9.
  [3]
@@ -1013,14 +1010,9 @@ LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <9> not available
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 31.
 
-
-Underfull \vbox (badness 1067) has occurred while \output is active []
-
- [4]
 LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <9> not available
 (Font)              Font shape `OT1/pnc/b/n' tried instead on input line 66.
-)
-(E:\dropbox\Dropbox\Journal_Chapter1\ExperimentalSetting.tex
+[4]) (E:\dropbox\Dropbox\Journal_Chapter1\ExperimentalSetting.tex
 Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
@@ -1066,11 +1058,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--42
 
  []
 
-[5] [6]) (E:\dropbox\Dropbox\Journal_Chapter1\RetrievalProblems.tex [7]
+[5]) (E:\dropbox\Dropbox\Journal_Chapter1\RetrievalProblems.tex [6]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 29.
+
 LaTeX Font Info:    Font shape `OT1/pnc/bx/it' in size <10> not available
 (Font)              Font shape `OT1/pnc/b/it' tried instead on input line 37.
 
-[8]
+Underfull \vbox (badness 4995) has occurred while \output is active []
+
+ [7]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 86.
@@ -1096,7 +1097,10 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no w in font nullfont!
 LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <12> not available
 (Font)              Font shape `OT1/pnc/b/n' tried instead on input line 75.
-) [9]
+) [9
+
+
+]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 140.
@@ -1121,10 +1125,7 @@ Overfull \hbox (6.35994pt too wide) in paragraph at lines 141--154
 [][]   [] 
  []
 
-[10
-
-
-]
+[10]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 183.
@@ -1156,15 +1157,12 @@ Missing character: There is no p in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no p in font nullfont!
 Missing character: There is no t in font nullfont!
-) [12]
+)
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 264.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [13]
+[12]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 292.
@@ -1172,7 +1170,7 @@ LaTeX Warning: No positions in optional float specifier.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [14]
+ [13]
 (E:\dropbox\Dropbox\Journal_Chapter1\dlmfigureTFDL2500.tex
 Missing character: There is no p in font nullfont!
 Missing character: There is no t in font nullfont!
@@ -1205,7 +1203,7 @@ Overfull \hbox (6.35994pt too wide) in paragraph at lines 327--340
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [15]
+ [14]
 (E:\dropbox\Dropbox\Journal_Chapter1\dfrTFDL.tex
 Missing character: There is no p in font nullfont!
 Missing character: There is no t in font nullfont!
@@ -1213,18 +1211,15 @@ Missing character: There is no p in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no p in font nullfont!
 Missing character: There is no t in font nullfont!
-)
-Underfull \vbox (badness 1371) has occurred while \output is active []
+) [15]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [16]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 393.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [17]
+[17]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 452.
@@ -1252,12 +1247,11 @@ Overfull \hbox (6.35994pt too wide) in paragraph at lines 59--70
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 83.
 
-[20]) (E:\dropbox\Dropbox\Journal_Chapter1\Conclusions.tex
-Underfull \hbox (badness 10000) in paragraph at lines 12--13
+) (E:\dropbox\Dropbox\Journal_Chapter1\Conclusions.tex
+Underfull \vbox (badness 1460) has occurred while \output is active []
 
- []
-
-) (E:\dropbox\Dropbox\Journal_Chapter1\JournalChapter1.bbl
+ [20])
+(E:\dropbox\Dropbox\Journal_Chapter1\JournalChapter1.bbl
 Underfull \hbox (badness 3343) in paragraph at lines 80--89
 []\OT1/pnc/m/n/8 Firas Damak, Karen Pinel-Sauvagnat, Mo-hand Boughanem, and Gui
 l-laume Ca-banac. 2013. Ef-
@@ -1269,7 +1263,10 @@ Underfull \hbox (badness 1845) in paragraph at lines 80--89
 h. In \OT1/pnc/m/it/8 Pro-ceed-ings of the 28th An-
  []
 
-[21]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [21]
 Underfull \hbox (badness 7576) in paragraph at lines 273--280
 []\OT1/pnc/m/n/8 B. Shar-ifi, M.-A. Hut-ton, and J.K. Kalita. 2010. Ex-per-i-me
 nts in Mi-croblog Sum-ma-riza-tion.
@@ -1282,52 +1279,48 @@ Sec-ond In-ter-na-tional Con-fer-ence on\OT1/pnc/m/n/8 . 49--56.
  []
 
 ) [22] (E:\dropbox\Dropbox\Journal_Chapter1\JournalChapter1.aux
-(E:\dropbox\Dropbox\Journal_Chapter1\bm25TFDL.aux))
-
-LaTeX Warning: There were undefined references.
-
- ) 
+(E:\dropbox\Dropbox\Journal_Chapter1\bm25TFDL.aux)) ) 
 Here is how much of TeX's memory you used:
- 27561 strings out of 493921
- 669511 string characters out of 3144873
- 2521144 words of memory out of 3000000
- 30259 multiletter control sequences out of 15000+200000
+ 27560 strings out of 493921
+ 669499 string characters out of 3144873
+ 2519615 words of memory out of 3000000
+ 30258 multiletter control sequences out of 15000+200000
  45867 words of font info for 104 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  56i,21n,94p,3124b,2259s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Progra
-m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx6.pfb><C:/Program F
-iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program File
-s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files 
-(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmex9.pfb><C:/Program File
-s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files 
-(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files (x
-86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files (x86)
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files (x86)/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files (x86)/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86)/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Program Files (x86)/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmr6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmr7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmr9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmsy5.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmsy6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cms
-y7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.
-pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb
-><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt8.pfb><C
-:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Progra
-m Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files 
-(x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvro8a.pfb><C:/Program Files (x86)/M
-iKTeX 2.9/fonts/type1/urw/ncntrsbk/uncb8a.pfb><C:/Program Files (x86)/MiKTeX 2.
-9/fonts/type1/urw/ncntrsbk/uncbi8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts
-/type1/urw/ncntrsbk/uncr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/u
-rw/ncntrsbk/uncri8a.pfb>
-Output written on JournalChapter1.pdf (22 pages, 605599 bytes).
+{C:/Program Files (x86)/Mi
+KTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files (x86)/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmbx6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmex10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cmextra/cmex9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmmi12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmmi5.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmmi6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmmi7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmmi8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmmi9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
+5.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pf
+b><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C
+:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Pr
+ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Progra
+m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program 
+Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Program Fil
+es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files 
+(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x8
+6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Program Files (x86)/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmtt8.pfb><C:/Program Files (x86)/MiKTeX
+ 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
+ts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
+/urw/helvetic/uhvro8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/nc
+ntrsbk/uncb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/ncntrsbk/u
+ncbi8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/ncntrsbk/uncr8a.p
+fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
+Output written on JournalChapter1.pdf (22 pages, 604405 bytes).
 PDF statistics:
  205 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

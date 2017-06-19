@@ -17,26 +17,26 @@ Therefore we are set to investigate the connection of the structure of microblog
 
 To this end, firstly we observe the performance of state of the art retrieval models in the context of Twitter corpora selecting the best retrieval model as a baseline. Then we perform a series of experiments which simulate the behaviour of a number of state of the art retrieval models in order to identify possible shortcomings in their design with respect to microblog documents. This initial experiment is completed with the creation of a retrieval model which takes into account all previous findings, namely MBRM. MBRM demonstrates that the scope hypotheses still holds within microblog documents, and that microblog document statistics can be leveraged to significantly improve ad-hoc retrieval performance.
 
-Secondly, we study the behaviour of inherent features of microblog documents and evaluate their suitability for enhancing the behaviour of state of the art retrieval models. Moreover, we demonstrate which microblog specific features are most indicative of the relevance of microblogs by reporting statistically significantly improved retrieval performance for ad-hoc search when taking them into account.
-
-Finally, we extend our analysis by considering the ordering of the different component that make up microblog documents. In order to do so, we encode the structure of observed relevant and non-relevant documents into state machines. These are in turn used to produce scores for re-ranking. We utilise the 2013 microblog collection to construct such state machines, and we test on the 2011 and 2012 microblog collections combined. Our results show statistically significantly improved results over the selected baseline, demonstrating the connection of microblog structure with relevance.
+%Secondly, we study the behaviour of inherent features of microblog documents and evaluate their suitability for enhancing the behaviour of state of the art retrieval models. Moreover, we demonstrate which microblog specific features are most indicative of the relevance of microblogs by reporting statistically significantly improved retrieval performance for ad-hoc search when taking them into account.
+%
+%Finally, we extend our analysis by considering the ordering of the different component that make up microblog documents. In order to do so, we encode the structure of observed relevant and non-relevant documents into state machines. These are in turn used to produce scores for re-ranking. We utilise the 2013 microblog collection to construct such state machines, and we test on the 2011 and 2012 microblog collections combined. Our results show statistically significantly improved results over the selected baseline, demonstrating the connection of microblog structure with relevance.
 
 This work will be driven by the following research questions:
 %With the objective of studying microblog document's structures, we set the focus of this work in the context of these research questions: 
 
 \begin{itemize}
+%
+%\item[] \textbf{RQ1.} Are there structural differences between relevant and non-relevant microblog documents? Can we exploit them for ad-hoc retrieval?
 
-\item[] \textbf{RQ1.} Are there structural differences between relevant and non-relevant microblog documents? Can we exploit them for ad-hoc retrieval?
+\item[] \textbf{RQ1.} What is the role of document length in connection with the informativeness of microblog documents?
+\item[] \textbf{RQ2.} Does term frequency of query terms relate to the informativeness of microblogs? 
+\item[] \textbf{RQ3.} Can we adapt state of the art retrieval models to better handle microblogs?
+\item[] \textbf{RQ4.} Can we devise a retrieval model to better capture the relevance of microblogs?
 
-\item[] \textbf{RQ1.1} Does document length have any connection with the relevance of microblogs?
-\item[] \textbf{RQ1.2} Does term frequency of query terms relate to the relevance of microblogs? 
-\item[] \textbf{RQ1.3} Can we adapt state of the art retrieval models to better handle microblogs?
-\item[] \textbf{RQ1.4} Can we devise a retrieval model to better capture the relevance of microblogs?
-
-\item[] \textbf{RQ2.} Can microblog features be exploited to help retrieval models better capture relevance than current retrieval models?
-\item[] \textbf{RQ3.} Is the order of the different elements in a microblog document connected with relevance? Can it be utilised for ad-hoc retrieval?
+%\item[] \textbf{RQ2.} Can microblog features be exploited to help retrieval models better capture relevance than current retrieval models?
+%\item[] \textbf{RQ3.} Is the order of the different elements in a microblog document connected with relevance? Can it be utilised for ad-hoc retrieval?
 
 \end{itemize}
 
-The rest of the chapter is organised as follows. First, we cover relevant literature regarding microblog searches and introduce the concepts utilised throughout this work (Section \ref{background}). Section \ref{experiment} sets the evaluation environment in which our experimentation is carried out, giving way to our main analysis (Section \ref{discussion}). Finally Section \ref{conclusion} concludes the work and points future research directions.
+The rest of the work is organised as follows. First, we cover literature relevant to microblog retrieval and other concepts utilised throughout this work (Section \ref{background}). Section \ref{experiment} sets the evaluation environment in which our experimentation is carried out, giving way to our analysis (Section \ref{RMinvestigation}). Section \ref{MBRM-section} then introduces our MBRM retrieval model, whereas Section \ref{conclusion} concludes the work and points to future research directions.
 
