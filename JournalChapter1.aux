@@ -18,6 +18,7 @@
 \citation{roelleke2013information}
 \citation{singhal1996pivoted}
 \citation{robertson2009probabilistic}
+\citation{manning2008introduction}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.1}Probability of Relevance Framework}{3}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.2}Document length normalization}{3}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Retrieval of Microblogs is Hard}{3}}
@@ -39,8 +40,12 @@
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
 \newlabel{summarytrec}{{I}{4}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Making Sense Of Microposts}{4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.5}\bf  Other Microblog retrieval features}{4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5}Other Microblog retrieval features}{4}}
 \citation{teevan2011twittersearch}
+\citation{robertson1995okapi}
+\citation{amati2003probabilistic}
+\citation{hiemstra2001using}
+\citation{blei2003latent}
 \citation{ounis2005terrier}
 \@writefile{lot}{\contentsline {table}{\numberline {II}{\ignorespaces Descriptive statistics for the collections being used in this study\relax }}{5}}
 \newlabel{collections}{{II}{5}}
@@ -48,11 +53,11 @@
 \@writefile{toc}{\contentsline {section}{\numberline {3}Experimental Setting}{5}}
 \newlabel{experiment}{{3}{5}}
 \citation{naveed2011searching}
+\citation{naveed2011searching}
 \@writefile{lot}{\contentsline {table}{\numberline {III}{\ignorespaces Evaluation results for the state of the art models considered. (Bold denotes the best performing system)\relax }}{6}}
 \newlabel{traditional}{{III}{6}}
 \@writefile{toc}{\contentsline {section}{\numberline {4}Investigating Retrieval Model Problems}{6}}
 \newlabel{RMinvestigation}{{4}{6}}
-\citation{naveed2011searching}
 \citation{robertson2009probabilistic}
 \@writefile{lot}{\contentsline {table}{\numberline {IV}{\ignorespaces Features involved in the computation of retrieval models.\relax }}{7}}
 \newlabel{modelfeatures}{{IV}{7}}
@@ -60,10 +65,12 @@
 \citation{ferguson2012investigation}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.1}The BM25 Case}{8}}
 \newlabel{bm25case}{{4.1}{8}}
+\newlabel{bm25proof}{{3}{8}}
 \@input{bm25TFDL.aux}
+\citation{hiemstra2001using}
 \@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Term Frequency (TF) vs, Doc. Length (DL)\relax }}{9}}
 \newlabel{bm25scoretfdl}{{1}{9}}
-\newlabel{bm25proof}{{3}{9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}The Hiemstra's Language Model (HLM) Case}{9}}
 \citation{hiemstra2000relating}
 \newlabel{cTFVSDL15}{{2a}{10}}
 \newlabel{sub@cTFVSDL15}{{a}{10}}
@@ -71,43 +78,43 @@
 \newlabel{sub@cTFVSDL99}{{b}{10}}
 \@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces HLM analysis\relax }}{10}}
 \newlabel{cTFVSDL}{{2}{10}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}The Hiemstra's Language Model (HLM) Case}{10}}
 \newlabel{hlmformula}{{4}{10}}
 \@writefile{lot}{\contentsline {table}{\numberline {V}{\ignorespaces P@30 scores for HLM as we consider different combinations of dTF and dDL, and c (All collections together)\relax }}{11}}
 \newlabel{hlmOverestimates}{{V}{11}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.1}Offsetting experiment}{11}}
+\newlabel{dlmproofc2}{{3a}{12}}
+\newlabel{sub@dlmproofc2}{{a}{12}}
+\newlabel{dlmproofcc}{{3b}{12}}
+\newlabel{sub@dlmproofcc}{{b}{12}}
+\newlabel{dlmproof}{{3c}{12}}
+\newlabel{sub@dlmproof}{{c}{12}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces DLM evaluation figures\relax }}{12}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.3}The DLM Case}{12}}
 \newlabel{dlmformula}{{5}{12}}
 \newlabel{dlmequation}{{4.3}{12}}
-\newlabel{dlmproofc2}{{3a}{13}}
-\newlabel{sub@dlmproofc2}{{a}{13}}
-\newlabel{dlmproofcc}{{3b}{13}}
-\newlabel{sub@dlmproofcc}{{b}{13}}
-\newlabel{dlmproof}{{3c}{13}}
-\newlabel{sub@dlmproof}{{c}{13}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces DLM evaluation figures\relax }}{13}}
 \@writefile{lot}{\contentsline {table}{\numberline {VI}{\ignorespaces P@30 scores for DLM for a range of $\mu $ values (All collections together)\relax }}{13}}
 \newlabel{drmmuvalues}{{VI}{13}}
+\@writefile{lot}{\contentsline {table}{\numberline {VII}{\ignorespaces P@30 scores for DLM as we consider different combinations of dTF and dDL, and $\mu $, (All collections together)\relax }}{13}}
+\newlabel{drmdtfmuvalues}{{VII}{13}}
 \citation{naveed2011searching}
+\newlabel{dlmfigureTFDL2500}{{4a}{14}}
+\newlabel{sub@dlmfigureTFDL2500}{{a}{14}}
+\newlabel{dlmfigureTFDL20}{{4b}{14}}
+\newlabel{sub@dlmfigureTFDL20}{{b}{14}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Evaluating DLM's behaviour\relax }}{14}}
 \citation{terrierir}
-\@writefile{lot}{\contentsline {table}{\numberline {VII}{\ignorespaces P@30 scores for DLM as we consider different combinations of dTF and dDL, and $\mu $, (All collections together)\relax }}{14}}
-\newlabel{drmdtfmuvalues}{{VII}{14}}
-\newlabel{dlmfigureTFDL2500}{{4a}{15}}
-\newlabel{sub@dlmfigureTFDL2500}{{a}{15}}
-\newlabel{dlmfigureTFDL20}{{4b}{15}}
-\newlabel{sub@dlmfigureTFDL20}{{b}{15}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Evaluating DLM's behaviour\relax }}{15}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Evaluating DFR's behaviour: Doc. length (DL) and Term Frequency (TF)\relax }}{15}}
+\newlabel{dfrTFDLcomp}{{5}{15}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.4}The DFRee Case}{15}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Evaluating DFR's behaviour: Doc. length (DL) and Term Frequency (TF)\relax }}{16}}
-\newlabel{dfrTFDLcomp}{{5}{16}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Harmonising Score differences}{16}}
 \@writefile{lot}{\contentsline {table}{\numberline {VIII}{\ignorespaces Behaviour when harmonising score differences.(All collections together.)\relax }}{17}}
 \newlabel{stdevharmonising}{{VIII}{17}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Harmonising Score differences}{17}}
+\@writefile{lot}{\contentsline {table}{\numberline {IX}{\ignorespaces Retrieval models performance with log-smoothed scores (All collections)\relax }}{17}}
+\newlabel{loggedRMS}{{IX}{17}}
 \newlabel{hlmformulalog}{{9}{17}}
-\@writefile{lot}{\contentsline {table}{\numberline {IX}{\ignorespaces Retrieval models performance with log-smoothed scores (All collections)\relax }}{18}}
-\newlabel{loggedRMS}{{IX}{18}}
 \@writefile{toc}{\contentsline {section}{\numberline {5}MBRM: A MicroBlog Retrieval Model}{18}}
 \newlabel{MBRM-section}{{5}{18}}
+\citation{naveed2011searching}
 \newlabel{microblogRM}{{6a}{19}}
 \newlabel{sub@microblogRM}{{a}{19}}
 \newlabel{microblogRM-param}{{6b}{19}}
@@ -115,26 +122,27 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces MBRM: A Microblog Retrieval Model\relax }}{19}}
 \@writefile{lot}{\contentsline {table}{\numberline {X}{\ignorespaces MBRM recommended parameter settings\relax }}{19}}
 \newlabel{recommended settings}{{X}{19}}
-\citation{naveed2011searching}
+\bibstyle{ACM-Reference-Format-Journals}
+\bibdata{bibtexshort}
+\bibcite{younosFreq}{\citeauthoryear {Aboulnaga, L.\nobreakspace  {}A.\nobreakspace  {}Clarke, and Cheriton}{Aboulnaga et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2012}}
+\bibcite{amati2011fub}{\citeauthoryear {Amati, Amodeo, Bianchi, Celi, Di\nobreakspace  {}Nicola, Flammini, Gaibisso, Gambosi, and Marcone}{Amati et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2011}}
+\bibcite{amati2003probabilistic}{\citeauthoryear {Amati, Joost, and Rijsbergen}{Amati et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2003}}
+\bibcite{basave2013making}{\citeauthoryear {Basave, Varga, Rowe, Stankovic, and Dadzie}{Basave et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2013}}
+\bibcite{blei2003latent}{\citeauthoryear {Blei, Ng, and Jordan}{Blei et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2003}}
+\bibcite{Damak:2013:ESF:2480362.2480537}{\citeauthoryear {Damak, Pinel-Sauvagnat, Boughanem, and Cabanac}{Damak et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2013}}
+\bibcite{ferguson2012investigation}{\citeauthoryear {Ferguson, O'Hare, Lanagan, Phelan, and McCarthy}{Ferguson et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2012}}
 \@writefile{lot}{\contentsline {table}{\numberline {XI}{\ignorespaces Performance of MBRM on all collections (Where * $p<0.05$ and ** $p<0.01$ respectively, with respect to IDF and DFRee)\relax }}{20}}
 \newlabel{MBRMPerformance}{{XI}{20}}
 \@writefile{toc}{\contentsline {section}{\numberline {6}Conclusions}{20}}
 \newlabel{conclusion}{{6}{20}}
-\bibstyle{ACM-Reference-Format-Journals}
-\bibdata{bibtexshort}
-\bibcite{younosFreq}{\citeauthoryear {Aboulnaga, L.\nobreakspace  {}A.\nobreakspace  {}Clarke, and Cheriton}{Aboulnaga et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2012}}
-\bibcite{amati2011fub}{\citeauthoryear {Amati, Amodeo, Bianchi, Marcone, Bordoni, Gaibisso, Gambosi, Celi, Di\nobreakspace  {}Nicola, and Flammini}{Amati et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2011}}
-\bibcite{amati2003probabilistic}{\citeauthoryear {Amati, Joost, and Rijsbergen}{Amati et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2003}}
-\bibcite{basave2013making}{\citeauthoryear {Basave, Varga, Rowe, Stankovic, and Dadzie}{Basave et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2013}}
-\bibcite{Damak:2013:ESF:2480362.2480537}{\citeauthoryear {Damak, Pinel-Sauvagnat, Boughanem, and Cabanac}{Damak et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2013}}
-\bibcite{ferguson2012investigation}{\citeauthoryear {Ferguson, O'Hare, Lanagan, Phelan, and McCarthy}{Ferguson et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2012}}
 \bibcite{gaoictnet}{\citeauthoryear {Gao, Cui, Liu, Liu, and Cheng}{Gao et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2013}}
 \bibcite{hanhit}{\citeauthoryear {Han, Li, Yang, Qi, Li, and Zhao}{Han et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2012}}
-\bibcite{model}{\citeauthoryear {Hiemstra}{Hiemstra}{2001}}
+\bibcite{hiemstra2001using}{\citeauthoryear {Hiemstra}{Hiemstra}{2001}}
 \bibcite{hiemstra2000relating}{\citeauthoryear {Hiemstra and De\nobreakspace  {}Vries}{Hiemstra and De\nobreakspace  {}Vries}{2000}}
 \bibcite{jabeuririt}{\citeauthoryear {Jabeur, Damak, Tamine, Cabanac, Pinel-Sauvagnat, and Boughanem}{Jabeur et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2013}}
 \bibcite{kimovercoming}{\citeauthoryear {Kim, Yeniterzi, and Callan}{Kim et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2012}}
 \bibcite{li2011pris}{\citeauthoryear {Li, Zhang, Lv, Xie, Lin, Xu, Xu, Chen, and Guo}{Li et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2011}}
+\bibcite{manning2008introduction}{\citeauthoryear {Manning, Raghavan, and Sch{\"u}tze}{Manning et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2008}}
 \bibcite{massoudi2011incorporating}{\citeauthoryear {Massoudi, Tsagkias, de\nobreakspace  {}Rijke, and Weerkamp}{Massoudi et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2011}}
 \bibcite{metzler2011usc}{\citeauthoryear {Metzler and Cai}{Metzler and Cai}{2011}}
 \bibcite{nagmoti2010ranking}{\citeauthoryear {Nagmoti, Teredesai, and De\nobreakspace  {}Cock}{Nagmoti et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2010}}
@@ -144,6 +152,7 @@
 \bibcite{perezuniversity}{\citeauthoryear {Perez, McMinn, and Jose}{Perez et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2013}}
 \bibcite{prebjut}{\citeauthoryear {Pre-Processing}{Pre-Processing}{2013}}
 \bibcite{robertson2009probabilistic}{\citeauthoryear {Robertson and Zaragoza}{Robertson and Zaragoza}{2009}}
+\bibcite{robertson1995okapi}{\citeauthoryear {Robertson, Walker, Jones, Hancock-Beaulieu, and Gatford}{Robertson et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{1995}}
 \bibcite{roelleke2013information}{\citeauthoryear {Roelleke}{Roelleke}{2013}}
 \bibcite{5590862}{\citeauthoryear {Sharifi, Hutton, and Kalita}{Sharifi et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2010}}
 \bibcite{pris2013}{\citeauthoryear {Siming\nobreakspace  {}Zhu}{Siming\nobreakspace  {}Zhu}{2013}}

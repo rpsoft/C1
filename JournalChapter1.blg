@@ -2,6 +2,7 @@ This is BibTeX, Version 0.99dThe top-level auxiliary file: JournalChapter1.aux
 A level-1 auxiliary file: bm25TFDL.aux
 The style file: ACM-Reference-Format-Journals.bst
 Database file #1: bibtexshort.bib
+Warning--I didn't find a database entry for "model"
 Too many commas in name 1 of "Siming Zhu, Zhe Gao, Yajing Yuan, Hui Wang, Guang Chen" for entry pris2013
 while executing---line 3199 of file ACM-Reference-Format-Journals.bst
 Too many commas in name 1 of "Siming Zhu, Zhe Gao, Yajing Yuan, Hui Wang, Guang Chen" for entry pris2013
@@ -25,8 +26,8 @@ while executing---line 3245 of file ACM-Reference-Format-Journals.bst
 Warning--no journal in younosFreq
 Warning--no number and no volume in younosFreq
 Warning--page numbers missing in both pages and numpages fields in younosFreq
-Warning--empty publisher in amati2011fub
-Warning--empty address in amati2011fub
+Warning--no journal in amati2011fub
+Warning--no number and no volume in amati2011fub
 Warning--page numbers missing in both pages and numpages fields in amati2011fub
 Warning--no journal in amati2003probabilistic
 Warning--no number and no volume in amati2003probabilistic
@@ -40,9 +41,9 @@ Warning--no number and no volume in gaoictnet
 Warning--page numbers missing in both pages and numpages fields in gaoictnet
 Warning--no number and no volume in hanhit
 Warning--page numbers missing in both pages and numpages fields in hanhit
-Warning--no journal in model
-Warning--no number and no volume in model
-Warning--page numbers missing in both pages and numpages fields in model
+Warning--no journal in hiemstra2001using
+Warning--no number and no volume in hiemstra2001using
+Warning--page numbers missing in both pages and numpages fields in hiemstra2001using
 Warning--no journal in hiemstra2000relating
 Warning--no number and no volume in hiemstra2000relating
 Warning--page numbers missing in both pages and numpages fields in hiemstra2000relating
@@ -54,6 +55,7 @@ Warning--page numbers missing in both pages and numpages fields in kimovercoming
 Warning--no journal in li2011pris
 Warning--no number and no volume in li2011pris
 Warning--page numbers missing in both pages and numpages fields in li2011pris
+Warning--empty address in manning2008introduction
 Warning--empty address in massoudi2011incorporating
 Warning--empty publisher in metzler2011usc
 Warning--empty address in metzler2011usc
@@ -73,6 +75,7 @@ Warning--no journal in prebjut
 Warning--no number and no volume in prebjut
 Warning--page numbers missing in both pages and numpages fields in prebjut
 Warning--empty address in robertson2009probabilistic
+Warning--no number and no volume in robertson1995okapi
 Warning--empty publisher in 5590862
 Warning--empty address in 5590862
 Too many commas in name 1 of "Siming Zhu, Zhe Gao, Yajing Yuan, Hui Wang, Guang Chen" for entry pris2013

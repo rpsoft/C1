@@ -20,7 +20,7 @@ where \(a_1, b_1\) and \(c_1\) are parameters to control the growth, maximum and
 TFComp\left(TF\right)=a_2e^{-{\frac {(TF-b_2)^{2}}{2c_2^{2}}}}
 \end{equation}
 
-where \(a_2, b_2\) and \(c_2\) are similar parameters to those found in the previous function. These functions were chosen as they offer good control over the curves, and their values can be bound between 1 and 0 and we do not need to normalise them. The final formulation for MBRM is given by: 
+where \(a_2, b_2\) and \(c_2\) are similar parameters to those found in the previous function. These functions were chosen as they offer good control over the curves, and their values can be bound between 0 and 1 thus we do not need to normalise them. The final formulation for MBRM is given by: 
 
 \begin{equation}
 MBRM(D,Q) = \sum_{i=1}^{|Q|} (1-\alpha)*\text{IDF}(q_i) + \alpha * DLComp(|D|) * TFComp(q_i)
@@ -63,6 +63,7 @@ Figure \ref{microblogRM} shows a simulation of the behaviour of MBRM in terms of
 	\end{subfigure} 
 	~
 	\begin{subfigure}[]{0.5\textwidth}
+		\vspace{-0.7cm}
 		\caption{MBRM effects of $\alpha$ on each fold.}
 		\input{MBRM-Results}
 		\label{microblogRM-param}
@@ -105,6 +106,4 @@ These results not only demonstrate that we can make effective use of document st
 \end{table}
 
 
-The verbose hypotheses however seems not to hold, as authors are simply capped by the character limitation with very little length variations. Thus documents are not generally longer due to style differences, or the verbosity of the author, but it is rather a reflection of the author's capacity to encode rich information in such limited constraints, which again aligns better with the scope hypotheses. And this is what we ultimately attempted to capture with our MBRM retrieval model.
-
-%Final note, the previous experiment where we apply a logarithmic function to the scores of the retrieval models, reduce the effect of the possible values of DL. This can also be interpreted as being closer to the behaviour of MBRM where increasing DL also increases the score, which provides the best experimental results.
+However, based on the statistically significantly better performance achieved by MBRM the verbose hypotheses seems not to hold, as authors capped by the character limitation. Thus documents are not generally longer due to style differences, or the verbosity of the author, but it is rather a reflection of the author's capacity to encode rich information in such limited constraints, which again aligns better with the scope hypotheses. And this is what we ultimately aimed to capture with our MBRM retrieval model.

@@ -1,29 +1,22 @@
 %!TEX root = JournalChapter1.tex
 \section{Investigating Retrieval Model Problems}
 \label{RMinvestigation}
-%In this section we will study problems in state of the art retrieval models when utilised in the context of microblogs.
-The literature has identified \textbf{document length normalization} as the main culprit for the under-performance of retrieval efforts in microblogs. The work by \cite{naveed2011searching} suggests that the \textbf{Verbosity} and \textbf{Scope} hypotheses do not hold for microblog retrieval.
-
-The \textbf{verbosity} hypothesis supports that some authors are more verbose than others, thus applying length normalization by dividing by the length of the document is beneficial to better capture relevance, as repetition of terms is superfluous. On the other hand, the \textbf{scope} hypotheses states that some authors simply have more to say, thus naturally adding more relevant information to the topic. As a result documents are longer but more extensive and rigorous in their content than shorter ones. The added value should be accounted for and thus the documents should promoted over shorter ones should not be normalised w.r.t their length.
+The literature has identified \textbf{document length normalization} as the main culprit for the under-performance of retrieval efforts in microblogs. The work by \cite{naveed2011searching} suggests that the \textbf{Verbosity} and \textbf{Scope} hypotheses do not hold for microblog retrieval. The \textbf{verbosity} hypothesis supports that some authors are more verbose than others, and hence applying length normalization by dividing by the length of the document is beneficial to better capture relevance, as repetition of terms is superfluous. On the other hand, the \textbf{scope} hypotheses states that some authors simply have more to say, thus naturally adding more relevant information to the topic. As a result documents are longer but more extensive and rigorous in their content than shorter ones. The added value of longer documents should be accounted for and thus promoted over shorter ones.
 
 In the context of Microblog retrieval, \cite{naveed2011searching} carried out a number of experiments using a logistic regression model over a number of tweet features as the retrieval methodology. They showed significant improvements in performance when their algorithm did not perform document length normalization over its normalised counterpart. However, since in their work their ranking approach takes into consideration multiple other features, it is not clear if their finding about document length normalization is generalisable.
 
-Furthermore, although it is been often assumed, it is not known if length normalisation is bad altogether for microblog retrieval, or maybe is just how it is interpreted in this particular case what makes it harmful.
-
-Intuition tell us that document length normalization as we know it does not interact well with the limitations characterised by microblogs. The \textbf{Verbosity} and \textbf{Scope} hypotheses seem not to model the behaviour of users publishing microblogs. Microblog users generally have the challenge of fitting their messages within the strict character limit. Consequently, retrieval models designed under scope and verbosity or similar premises, such as BM25 \cite{robertson2009probabilistic} are likely to exhibit unexpected behaviour.
+Furthermore, although it is been often assumed, it is not known if length normalisation is bad altogether for microblog retrieval, or maybe is just how it is interpreted in this particular case what makes it harmful. Intuition tell us that document length normalization as we know it does not interact well with the limitations characterised by microblogs. The \textbf{Verbosity} and \textbf{Scope} hypotheses seem not to model the behaviour of users publishing microblogs. Microblog users generally have the challenge of fitting their messages within the strict character limit. Consequently, retrieval models designed under scope and verbosity or similar premises, such as BM25 \cite{robertson2009probabilistic} are likely to exhibit unexpected behaviour, as it can be observed in Tables \ref{traditional}.
 
 To aid in developing our understanding of the behaviour of retrieval models we formalise their composition. To this end we have compiled Table \ref{modelfeatures} to show the different components involved in the score computation of a variety of state of the art retrieval models. The top row of the table indicates whether the component relies on collection statistics (I.e. Collection feature) or the document itself (Document feature). The second row contains acronyms for each of the features, which are expanded as: 
 
 \begin{itemize}
-\item [$\bullet$] \textbf{AverageDocumentLength (ADL):} This is the average document length, in number of tokens, for the whole collection.
-\item [$\bullet$] \textbf{DocumentLength (DL):} This is the document length, in number of tokens, for the document being scored.
-%% what about key frequency (shouldnt matter, as terms appear only once in the queries, but good to mention)
-%\item \textbf{KeyFrequency (KF):} This is the term frequency of the query term within the query itself.
-\item [$\bullet$] \textbf{NumberOfDocuments (ND):} Total number of documents in the collection. 
-\item [$\bullet$] \textbf{DocumentFrequency (DF):} Number of documents in which the term appears (I.e. A term's posting list size).
-\item [$\bullet$] \textbf{NumberOfTokens (NT):} Number of different tokens in the collection.
-\item [$\bullet$] \textbf{CollectionTermFrequency (CTF):} Frequency of a term in the whole collection. (I.e. Total number of occurences of a term in the collection)
-\item [$\bullet$] \textbf{TermFrequency (TF):} Frequency of the term in the document being evaluated.
+\item [ADL.] \textbf{AverageDocumentLength:} This is the average document length, in number of tokens, for the whole collection.
+\item [DL.] \textbf{DocumentLength:} This is the document length, in number of tokens, for the document being scored.
+\item [ND.] \textbf{NumberOfDocuments:} Total number of documents in the collection. 
+\item [DF.] \textbf{DocumentFrequency:} Number of documents in which the term appears (I.e. A term's posting list size).
+\item [NT.] \textbf{NumberOfTokens:} Number of different tokens in the collection.
+\item [CTF.] \textbf{CollectionTermFrequency:} Frequency of a term in the whole collection. (I.e. Total number of occurences of a term in the collection)
+\item [TF.] \textbf{TermFrequency:} Frequency of the term in the document being evaluated.
 \end{itemize}
 
 \begin{table}[]
@@ -47,6 +40,8 @@ To aid in developing our understanding of the behaviour of retrieval models we f
 
 Each of the remaining rows contain the name of the retrieval model as well as whether a component involved in its computation (Denoted by *). For example, DFRee uses NumberOfTokens (NT), CollectionTermFrequency (CTF), TermFrequency (TF) and Document Length (DL).
 
+In the following sections we investigate the behaviour of the abovementioned retrieval models in terms of these features. We perform our analysis mainly by means of simulating their behaviour with a range of different values common under microblog retrieval conditions.
+
 \subsection{The BM25 Case}
 \label{bm25case}
 The work by \cite{ferguson2012investigation} examined the performance of BM25 when used under a microblog retrieval scenario. Their findings showed how the closer to zero the free parameters were set in BM25, the better the performance achieved. However, they did not connect this finding to the design of BM25 and what these settings meant in terms of the affected components. In this section we exemplify and connect these findings to the theory by simulating the behaviour of BM25 under microblog retrieval conditions.
@@ -60,7 +55,7 @@ The first version of the saturation function is given by:
  \text{Version 1: }\frac{f(q_i, D)}{f(q_i, D) + k_1} \text{   for some k_1 $>$ 0}
 \end{equation}
 
-Once we take into consideration the Verbosity and Scope hypotheses, we derive the following saturation function:
+Once we take into consideration the Verbosity and Scope hypotheses, the following saturation function can be derived:
 
 \begin{equation}
  \text{Version 2: }\frac{f(q_i, D)}{f(q_i, D) + k_1*((1-b)+b*dl/avdl)} \text{   for some k_1 $>$ 0}
@@ -68,7 +63,7 @@ Once we take into consideration the Verbosity and Scope hypotheses, we derive th
 
 The main difference between these equations is that \textbf{Version 2} reduces the effect of term frequency with respect to the document length and its collection average, whilst \textbf{Version 1} only relies on the \(k_1\) free parameter. Secondly, the free parameter \(b\) ponders between the Verbosity and Scope hypotheses. Setting \(b\) to 0 effectively disables the Verbose hypothesis, giving full weight to Scope, in other words, the longer the document the better. Thus when \(b\) is set to 0, \textit{Version 2} of the saturation function becomes \textit{Version 1}.
 
-As we introduced before, the study carried by \cite{ferguson2012investigation} explored the best parameters for \(b\) and \(k_1\) concluding that best performance is achieved as both parameters tend to 0. However, the authors did not mention is that by setting those parameters close to 0, we are disregarding the document length normalisation component altogether. Thus for all intents and purposes BM25 becomes IDF. This can be proved mathematically by substituting \(b\) and \(k_1\) by 0 as follows \ref{bm25proof}.
+As we mentioned before, the study carried by \cite{ferguson2012investigation} explored the best parameters for \(b\) and \(k_1\) concluding that best performance is achieved as both parameters tend to 0. However, the authors did not mention is that by setting those parameters close to 0, we are disregarding the document length normalisation component altogether. Thus for all intents and purposes BM25 becomes IDF. This can be proved mathematically by substituting \(b\) and \(k_1\) by 0 as follows \ref{bm25proof}.
 
 \begin{small}
 \begin{align}
@@ -90,7 +85,7 @@ Initially it would seem that the \textbf{Scope} and \textbf{Verbosity} hypothese
   \label{bm25scoretfdl}
 \end{figure}
 
-Furthermore, terms in microblog documents have very low document frequencies. In fact, more often than not, query terms appear at most once in each document unless dealing with spam. Thus a query term appearing more than once within a document can have a dramatic effect over the score produced by BM25. In other words, the very low document frequencies result in unreliable estimations of the informativeness of a query term. Consequently, in this particular case, it is better to rely on features outside the document such as collection features.
+Furthermore, terms in microblog documents have very low document frequencies and more often than not, query terms appear at most once in each document unless dealing with spam. Thus a query term appearing more than once within a document can have a dramatic effect over the score produced by BM25. In other words, the very low document frequencies result in unreliable estimations of the informativeness of a query term. Consequently, in this particular case, it is better to rely on features outside the document such as collection features.
 
 Finally, Figure \ref{bm25scoretfdl} shows the possible BM25 scores for a range of Term Frequency (TF) and Doc. Length (DL) values.\footnote{Where \(ND=100k\) and \(DF=100\)}. We can extract two interesting behaviours which we can compare later to other retrieval models. Firstly the increase of document length is regarded as negative. In other words the more information in number of terms is encoded in the document the less relevant it is regarded. Secondly the increasing term frequency results in increased scores. This would seem counter-intuitive in a document with such a limited length, as users normally struggle to fit their messages. Additionally, there is a danger of promoting spam messages which may only contain the query terms.
 
@@ -98,8 +93,7 @@ Finally, Figure \ref{bm25scoretfdl} shows the possible BM25 scores for a range o
 %\mentalnote{Finally, by reducing the values of the b and k constants, the standard deviation of across the scores (w.r.t. tf and dl) by bm25 is also reduced, reaching 0 when b and k are 0, as tf and dl do not play any role in this case. Lower stdev. better performance}
 
 \subsection{The Hiemstra's Language Model (HLM) Case}
-%Now we study the Hiemstra's Language Model (HLM) under Microblog conditions. 
-Table \ref{modelfeatures} shows that HLM utilises both CollectionTermFrequency (CTF) and TermFrequency (TF) together with the total number of different tokens in the collection (NT) and document length (DL). Furthermore, if we pay attention to Table \ref{traditional} we can observe that whilst DFR and HLM utilize the same components, HLM exhibits a more erratic performance under microblog conditions. HLM's performance for the 2013 collection is considerably lower than that of DFR or IDF, whereas it remains close to the top performing models for the 2011, 2012 and 2014 collections. HLM is formulated as follows: 
+In this section we study the Hiemstra's Language Model (HLM) \cite{hiemstra2001using} under Microblog conditions. Table \ref{modelfeatures} shows that HLM utilises both CollectionTermFrequency (CTF) and TermFrequency (TF) together with the total number of different tokens in the collection (NT) and document length (DL). Furthermore, if we pay attention to Table \ref{traditional} we can observe that whilst DFR and HLM utilize the same components, HLM exhibits a more erratic performance under microblog conditions. HLM's performance for the 2013 collection is considerably lower than that of DFR or IDF, whereas it remains close to the top performing models for the 2011, 2012 and 2014 collections. Let us look into the formulation of HLM: 
 
 \begin{small}
 \begin{align}
@@ -178,46 +172,44 @@ Table \ref{traditional} shows that HLM is the second worst model overall for mic
 \subsubsection{Offsetting experiment}
 In order to test this hypotheses we simulate the behaviour of longer documents with higher term frequency by offsetting the values of TF and DL. We do this by a simple addition \(TF = TF+dTF\), in this case \(dTF\) being the pondering value to offset \(TF\). Likewise, we utilise \(DL = DL+dDL\) where \(dDL\) is the variable to offset \(DL\).
 
-Table \ref{hlmOverestimates} shows the performance of HLM measured by Precision@30 with different configurations. The first row shows the performance of HLM with a default configuration of $c = 0.15$. 
+Table \ref{hlmOverestimates} shows the performance of HLM measured by Precision@30 with different configurations. The first row shows the performance of HLM with a default configuration of $c = 0.15$. The second row with $dTF = 20$ so that $TF = TF+20$ which denotes the offsetting of TF by +20. As stated before, the reason behind this offsetting is to reduce the differences between possible scores with respect to the actual values of TF. As we can observe only offsetting TF does no result in any significant improvement. Similarly, the third row shows the performance of HLM when offsetting DL by +20 in order to reduce the possible score differences. Consequently the results are much better than before with a Precision@30 increase of +11.76\%. Finally, we experiment with the offsetting of TF and DL together to achieve yet another +15.79\% Precision@30 increase over the previous combination and a very substantial increase of +29.41\% over the baseline (no offsets) configuration). 
 
 \begin{table}[]
 
 	\caption{P@30 scores for HLM as we consider different combinations of dTF and dDL, and c (All collections together)}
 	\centering
-	\begin{tabular}{l|c|c|c} 	
+	\begin{tabular}{l|c|c|c|c} 	
+	\textit{\textbf{}} &
 	\textit{\textbf{c}} & 
 	\textit{\textbf{dTF}} & 
 	\textit{\textbf{dDL}} & 
 	\textit{\textbf{P@30}} 	
 	\tabularnewline
 	\hline
-	0.15 &    &    & 0.3475\\
-	0.15 & 20 &    & 0.3486\\
-	0.15 &    & 20 & \textbf{0.3839} \\
-	0.15 & 20 & 20 & \textbf{0.4462} \\
+	1 & 0.15 &    &    & 0.3475\\
+	2 & 0.15 & 20 &    & 0.3486\\
+	3 & 0.15 &    & 20 & 0.3839 \\
+	4 & 0.15 & 20 & 20 & 0.4462 \\
 	\hline
 	\hline
-	0.05 &  &  & \textbf{0.2824} \\
-	0.40 &  &  & \textbf{0.4009} \\
-	0.70 &  &  & \textbf{0.4281} \\
-	0.99 &  &  & \textbf{0.4492} \\
+	5 & 0.05 &  &  & 0.2824 \\
+	6 & 0.40 &  &  & 0.4009 \\
+	7 & 0.70 &  &  & 0.4281 \\
+	8 & 0.99 &  &  & 0.4492 \\
 	\hline
     \hline
-	0.99 & 20 & 20 & \textbf{0.4532} \\	
+	9 & 0.99 & 20 & 20 & \textbf{0.4532} \\	
 	\hline
 	\end{tabular}
 	\label{hlmOverestimates}
 \end{table}
 
-The second row with $dTF = 20$ so that $TF = TF+20$ which denotes the offsetting of TF by +20. As stated before, the reason behind this offsetting is to reduce the differences between possible scores with respect to the actual values of TF. As we can observe only offsetting TF does no result in any significant improvement. Similarly, the third row shows the performance of HLM when offsetting DL by +20 in order to reduce the possible score differences. Consequently the results are much better than before with a Precision@30 increase of +11.76\%. Finally, we experiment with the offsetting of TF and DL together to achieve yet another +15.79\% Precision@30 increase over the previous combination and a very substantial increase of +29.41\% over the baseline (no offsets) configuration). 
 
 It is interesting to notice how only the increase of TF does not help in retrieval, however only increasing DL does produce better results. Yet more importantly, by incrementing both TF and DL we obtain the best performance over all previous configurations. These results hint to a very subtle relationship between DL and TF values of microblog documents. 
 
-Rows 5 to 8 in Table \ref{hlmOverestimates} show the performance of HLM with different values of $c$. As $c$ is increased performance increases as well, reaching comparable performance to the approach which offsets DL and TF.
+Rows 5 to 8 in Table \ref{hlmOverestimates} show the performance of HLM with different values of $c$. As $c$ is increased performance increases as well, reaching comparable performance to the approach which offsets DL and TF (Row 4).
 
-Finally, we compare Figures \ref{cTFVSDL15} and \ref{cTFVSDL99} which show scores produced by HLM w.r.t. TF and DL with different values of $c$. Figure \ref{cTFVSDL15} sets $c=0.15$ whereas Figure \ref{cTFVSDL99} sets $c=0.99$. It is easily observed how Figure \ref{cTFVSDL15} shows more differences across the spectrum of scores with respect to TF and DL than Figure \ref{cTFVSDL99}. We can also observe how offsetting DL and TF forces the possible values of HLM to lie in the more stable area of the Figures. Furthermore, Figure \ref{cTFVSDL99} produces the most stable scores.
-
-From these experiments we can conclude that retrieval models require a conservative and delicate relationship with DL and TF, taking especial care to reduce the differences across the spectrum of possible scores, in order to reduce any unfair weighting differences due to scarcity in DL and TF.
+Finally, we compare Figures \ref{cTFVSDL15} and \ref{cTFVSDL99} which show scores produced by HLM w.r.t. TF and DL with different values of $c$. Figure \ref{cTFVSDL15} sets $c=0.15$ whereas Figure \ref{cTFVSDL99} sets $c=0.99$. Figure \ref{cTFVSDL15} shows more differences across the spectrum of scores with respect to TF and DL than Figure \ref{cTFVSDL99}. We can also observe how offsetting DL and TF forces the possible values of HLM to lie in the more stable area of the Figures. Furthermore, Figure \ref{cTFVSDL99} produces the most stable scores. From these experiments we can conclude that retrieval models require a conservative and delicate relationship with DL and TF, taking especial care to reduce the differences across the spectrum of possible scores, in order to reduce any unfair weighting differences due to scarcity in DL and TF.
 
 \subsection{The DLM Case}
 Dirichlet Smoothed language model (DLM), was the baseline retrieval model for the 2013 and 2014 instances of the microblog track. DLM was used within the "Microblog track as a service" client which managed a Lucene index in its core. DLM has a smoothing parameter named $\mu$, which was set to 2500 by default during the 2013 and 2014 microblog tracks. Moreover, DLM scores are produced \footnote{As implemented in the Terrier IR platform} by the following equation:
@@ -292,23 +284,24 @@ The results of the evaluation are presented in Table \ref{drmdtfmuvalues}. The f
 \begin{table}[]
 	\caption{P@30 scores for DLM as we consider different combinations of dTF and dDL, and $\mu$, (All collections together)}
 	\centering
-	\begin{tabular}{l|c|c|c} 	
+	\begin{tabular}{l|c|c|c|c} 	
+	&
 	\textit{\textbf{$\mu$}} & 
 	\textit{\textbf{dTF}} & 
 	\textit{\textbf{dDL}} & 
 	\textit{\textbf{P@30}} 	
 	\tabularnewline
 	\hline
-	20 &    &    & 0.4241\\
-	20 & 20 &    & 0.4558\\
-	20 &    & 20 & 0.3901\\
-	20 & 20 & 20 & 0.4547\\
+	1 & 20 &    &    & 0.4241\\
+	2 & 20 & 20 &    & 0.4558\\
+	3 & 20 &    & 20 & 0.3901\\
+	4 & 20 & 20 & 20 & 0.4547\\
 	\hline	
 	\hline
-	2500 &    &    & 0.2988\\
-	2500 & 20 &    & 0.4468\\
-	2500 &    & 20 & 0.2892\\
-	2500 & 20 & 20 & 0.4466\\
+	5 & 2500 &    &    & 0.2988\\
+	6 & 2500 & 20 &    & 0.4468\\
+	7 & 2500 &    & 20 & 0.2892\\
+	8 & 2500 & 20 & 20 & 0.4466\\
     \hline
 	\end{tabular}
 	\label{drmdtfmuvalues}
@@ -376,7 +369,7 @@ As we traverse the Document Length axis we can observe an interesting behaviour 
 
 For low values of TF, incrementing DL from 1 to $\sim16$ results in also a higher score. This behaviour aligns with the scope hypotheses as longer documents are regarded as more informative. However, when DL reaches high enough values the scores start to decline. The latter behaviour is in line with the verbose hypotheses which assumes the extra length is due to superfluous information. Particularly when the extended document length is not accompanied by higher query term frequencies.
 
-When dealing with documents as short as microblogs it is very difficult assert their informativeness or relevance in terms of the verbose or scope hypotheses. In fact all retrieval models observed so far follow these to some degree and perform worse than a simply using IDF as a retrieval model. Additionally, the premises in which they are built seem not to hold as they fail to perform better than simple IDF. However DFRee is an interesting exception as it performs better than all the studied retrieval models, and it performs better than IDF in some cases (Table \ref{traditional}).
+When dealing with documents as short as microblogs it is very difficult to assert their informativeness or relevance in terms of the verbose or scope hypotheses. In fact all retrieval models observed so far follow these to some degree and perform worse than a simply using IDF as a retrieval model. Additionally, the premises in which they are built seem not to hold as they fail to perform better than simple IDF. However DFRee is an interesting exception as it performs better than all the studied retrieval models, and it performs better than IDF in some cases (Table \ref{traditional}).
 
 We believe that the \textit{saturation point} observed in Figure \ref{dfrTFDLcomp} in terms of TF and DL is responsible for DFRee outperforming other retrieval models in this task (And sometimes IDF). The score produced by DFRee can only be higher if both TF and DL increase. Thus, incrementing the value of a single component will increase the score to a saturation point after which the score will then decrease. As an example, consider an average microblog document of length 15 (blue plane in Figure \ref{dfrTFDLcomp}). The score is maximised when TF approaches 3, after which higher TF values result in a significant reduction to the score.
 

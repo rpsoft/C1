@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2014.5.26)  18 JUL 2017 15:44
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2014.5.26)  2 AUG 2017 02:19
 entering extended mode
 **JournalChapter1.tex
 (E:\dropbox\Dropbox\Journal_Chapter1\JournalChapter1.tex
@@ -999,21 +999,25 @@ Overfull \vbox (72.27pt too high) has occurred while \output is active []
 Non-PDF special ignored!
 
 ]
+
+LaTeX Warning: Citation `model' on page 2 undefined on input line 7.
+
 LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <10> not available
-(Font)              Font shape `OT1/pnc/b/n' tried instead on input line 16.
+(Font)              Font shape `OT1/pnc/b/n' tried instead on input line 11.
 ) (E:\dropbox\Dropbox\Journal_Chapter1\Background.tex
+
+LaTeX Warning: Citation `model' on page 2 undefined on input line 7.
+
 [2]
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <9> not available
 (Font)              Font shape `OT1/phv/m/sl' tried instead on input line 9.
  [3]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 31.
+               Default added (so using `tbp') on input line 22.
 
-LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <9> not available
-(Font)              Font shape `OT1/pnc/b/n' tried instead on input line 66.
 [4]) (E:\dropbox\Dropbox\Journal_Chapter1\ExperimentalSetting.tex
-Underfull \hbox (badness 10000) in paragraph at lines 7--8
+Underfull \hbox (badness 10000) in paragraph at lines 5--8
 
  []
 
@@ -1028,29 +1032,16 @@ LaTeX Warning: No positions in optional float specifier.
 
 LaTeX Font Info:    Font shape `OT1/pnc/bx/it' in size <9> not available
 (Font)              Font shape `OT1/pnc/b/it' tried instead on input line 15.
+LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <9> not available
+(Font)              Font shape `OT1/pnc/b/n' tried instead on input line 23.
 
-Overfull \hbox (17.51117pt too wide) in paragraph at lines 11--29
-[][] 
+Overfull \hbox (21.81598pt too wide) in paragraph at lines 7--56
+[][]   []
  []
 
 
-Overfull \hbox (17.51117pt too wide) in paragraph at lines 33--54
-[][] 
- []
-
-
-Overfull \hbox (17.51117pt too wide) in paragraph at lines 60--81
-[][] 
- []
-
-
-Overfull \hbox (17.51117pt too wide) in paragraph at lines 89--110
- [][] 
- []
-
-
-Overfull \hbox (17.51117pt too wide) in paragraph at lines 123--144
- [][] 
+Overfull \hbox (21.81598pt too wide) in paragraph at lines 57--115
+[][]   [] 
  []
 
 )
@@ -1058,23 +1049,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--42
 
  []
 
-[5]) (E:\dropbox\Dropbox\Journal_Chapter1\RetrievalProblems.tex [6]
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 29.
-
-LaTeX Font Info:    Font shape `OT1/pnc/bx/it' in size <10> not available
-(Font)              Font shape `OT1/pnc/b/it' tried instead on input line 37.
-
-Underfull \vbox (badness 4995) has occurred while \output is active []
-
- [7]
+[5]) (E:\dropbox\Dropbox\Journal_Chapter1\RetrievalProblems.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [8]
+ [6]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 86.
+               Default added (so using `tbp') on input line 22.
+
+LaTeX Font Info:    Font shape `OT1/pnc/bx/it' in size <10> not available
+(Font)              Font shape `OT1/pnc/b/it' tried instead on input line 30.
+[7] [8]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 81.
 
 (E:\dropbox\Dropbox\Journal_Chapter1\bm25TFDL.tex
 Missing character: There is no p in font nullfont!
@@ -1103,7 +1091,7 @@ LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <12> not available
 ]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 140.
+               Default added (so using `tbp') on input line 134.
 
 (E:\dropbox\Dropbox\Journal_Chapter1\hlmfigureDLVSTF.tex
 Missing character: There is no p in font nullfont!
@@ -1121,14 +1109,14 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no p in font nullfont!
 Missing character: There is no t in font nullfont!
 )
-Overfull \hbox (6.35994pt too wide) in paragraph at lines 141--154
+Overfull \hbox (6.35994pt too wide) in paragraph at lines 135--148
 [][]   [] 
  []
 
 [10]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 183.
+               Default added (so using `tbp') on input line 177.
 
 [11] (E:\dropbox\Dropbox\Journal_Chapter1\dlmfigurec2.tex
 Missing character: There is no p in font nullfont!
@@ -1146,7 +1134,7 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no p in font nullfont!
 Missing character: There is no t in font nullfont!
 )
-Overfull \hbox (6.35994pt too wide) in paragraph at lines 237--250
+Overfull \hbox (6.35994pt too wide) in paragraph at lines 229--242
 []$[]$   $[]$ 
  []
 
@@ -1157,15 +1145,14 @@ Missing character: There is no p in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no p in font nullfont!
 Missing character: There is no t in font nullfont!
-)
+) [12]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 264.
+               Default added (so using `tbp') on input line 256.
 
-[12]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 292.
+               Default added (so using `tbp') on input line 284.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1179,7 +1166,7 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no p in font nullfont!
 Missing character: There is no t in font nullfont!
 )
-Overfull \hbox (8.76292pt too wide) in paragraph at lines 76--332
+Overfull \hbox (8.76292pt too wide) in paragraph at lines 76--325
  [][] 
  []
 
@@ -1191,12 +1178,12 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no p in font nullfont!
 Missing character: There is no t in font nullfont!
 )
-Overfull \hbox (8.76292pt too wide) in paragraph at lines 77--339
+Overfull \hbox (8.76292pt too wide) in paragraph at lines 77--332
  [][] 
  []
 
 
-Overfull \hbox (6.35994pt too wide) in paragraph at lines 327--340
+Overfull \hbox (6.35994pt too wide) in paragraph at lines 320--333
 [][]   [] 
  []
 
@@ -1212,19 +1199,16 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no p in font nullfont!
 Missing character: There is no t in font nullfont!
 ) [15]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [16]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 393.
+               Default added (so using `tbp') on input line 386.
 
-[17]
+[16]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 452.
+               Default added (so using `tbp') on input line 445.
 
-) (E:\dropbox\Dropbox\Journal_Chapter1\MBModel.tex [18]
+) (E:\dropbox\Dropbox\Journal_Chapter1\MBModel.tex [17]
 (E:\dropbox\Dropbox\Journal_Chapter1\MBRM-GAUSS-TF.tex
 Missing character: There is no p in font nullfont!
 Missing character: There is no t in font nullfont!
@@ -1238,56 +1222,60 @@ Overfull \hbox (16.43767pt too wide) in paragraph at lines 61--63
  []
 
 (E:\dropbox\Dropbox\Journal_Chapter1\MBRM-Results.tex)
-Overfull \hbox (6.35994pt too wide) in paragraph at lines 59--70
+Overfull \hbox (6.35994pt too wide) in paragraph at lines 59--71
 []$[]$   $[]$ 
  []
 
-[19]
+[18]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 83.
+               Default added (so using `tbp') on input line 84.
 
 ) (E:\dropbox\Dropbox\Journal_Chapter1\Conclusions.tex
-Underfull \vbox (badness 1460) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [20])
+ [19])
 (E:\dropbox\Dropbox\Journal_Chapter1\JournalChapter1.bbl
-Underfull \hbox (badness 3343) in paragraph at lines 80--89
+Underfull \hbox (badness 3343) in paragraph at lines 89--98
 []\OT1/pnc/m/n/8 Firas Damak, Karen Pinel-Sauvagnat, Mo-hand Boughanem, and Gui
 l-laume Ca-banac. 2013. Ef-
  []
 
 
-Underfull \hbox (badness 1845) in paragraph at lines 80--89
+Underfull \hbox (badness 1845) in paragraph at lines 89--98
 \OT1/pnc/m/n/8 fec-tive-ness of State-of-the-art Fea-tures for Mi-croblog Searc
 h. In \OT1/pnc/m/it/8 Pro-ceed-ings of the 28th An-
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 7468) has occurred while \output is active []
 
- [21]
-Underfull \hbox (badness 7576) in paragraph at lines 273--280
+ [20]
+Underfull \hbox (badness 7576) in paragraph at lines 305--312
 []\OT1/pnc/m/n/8 B. Shar-ifi, M.-A. Hut-ton, and J.K. Kalita. 2010. Ex-per-i-me
 nts in Mi-croblog Sum-ma-riza-tion.
  []
 
 
-Underfull \hbox (badness 5077) in paragraph at lines 273--280
+Underfull \hbox (badness 5077) in paragraph at lines 305--312
 \OT1/pnc/m/n/8 In \OT1/pnc/m/it/8 So-cial Com-put-ing (So-cial-Com), 2010 IEEE 
 Sec-ond In-ter-na-tional Con-fer-ence on\OT1/pnc/m/n/8 . 49--56.
  []
 
-) [22] (E:\dropbox\Dropbox\Journal_Chapter1\JournalChapter1.aux
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [21])
+[22] (E:\dropbox\Dropbox\Journal_Chapter1\JournalChapter1.aux
 (E:\dropbox\Dropbox\Journal_Chapter1\bm25TFDL.aux)) ) 
 Here is how much of TeX's memory you used:
- 27560 strings out of 493921
- 669499 string characters out of 3144873
- 2519680 words of memory out of 3000000
- 30258 multiletter control sequences out of 15000+200000
+ 27565 strings out of 493921
+ 669587 string characters out of 3144873
+ 2515932 words of memory out of 3000000
+ 30263 multiletter control sequences out of 15000+200000
  45867 words of font info for 104 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 56i,21n,94p,3124b,2259s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 56i,22n,94p,3124b,2259s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/Mi
 KTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files (x86)/MiKTeX 2.9/fon
 ts/type1/public/amsfonts/cm/cmbx6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/
@@ -1320,7 +1308,7 @@ ts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
 ntrsbk/uncb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/ncntrsbk/u
 ncbi8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/ncntrsbk/uncr8a.p
 fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on JournalChapter1.pdf (22 pages, 604590 bytes).
+Output written on JournalChapter1.pdf (22 pages, 605221 bytes).
 PDF statistics:
  205 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

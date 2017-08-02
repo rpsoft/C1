@@ -42,15 +42,14 @@
 \newblock
 
 
-\bibitem[\protect\citeauthoryear{Amati, Amodeo, Bianchi, Marcone, Bordoni,
-  Gaibisso, Gambosi, Celi, Di~Nicola, and Flammini}{Amati
-  et~al\mbox{.}}{2011}]%
+\bibitem[\protect\citeauthoryear{Amati, Amodeo, Bianchi, Celi, Di~Nicola,
+  Flammini, Gaibisso, Gambosi, and Marcone}{Amati et~al\mbox{.}}{2011}]%
         {amati2011fub}
-{Gianni Amati}, {Giuseppe Amodeo}, {Marco Bianchi}, {Giuseppe Marcone},
-  {Fondazione~Ugo Bordoni}, {Carlo Gaibisso}, {Giorgio Gambosi}, {Alessandro
-  Celi}, {Cesidio Di~Nicola}, {and} {Michele Flammini}. 2011.
+{G. Amati}, {G. Amodeo}, {M. Bianchi}, {A. Celi}, {C. Di~Nicola}, {M.
+  Flammini}, {C. Gaibisso}, {G. Gambosi}, {and} {G. Marcone}. 2011.
 \newblock \showarticletitle{FUB, IASI-CNR, UNIVAQ at TREC 2011 Microblog
-  Track.}. In {\em TREC}.
+  track}.
+\newblock  (2011).
 \newblock
 
 
@@ -71,6 +70,16 @@
   Stankovic}, {and} {Aba-Sah Dadzie}. 2013.
 \newblock \showarticletitle{Making Sense of Microposts (\# MSM2013) Concept
   Extraction Challenge.}. In {\em \# MSM}. 1--15.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Blei, Ng, and Jordan}{Blei
+  et~al\mbox{.}}{2003}]%
+        {blei2003latent}
+{David~M Blei}, {Andrew~Y Ng}, {and} {Michael~I Jordan}. 2003.
+\newblock \showarticletitle{Latent dirichlet allocation}.
+\newblock {\em the Journal of machine Learning research\/}  {3} (2003),
+  993--1022.
 \newblock
 
 
@@ -120,7 +129,7 @@
 
 
 \bibitem[\protect\citeauthoryear{Hiemstra}{Hiemstra}{2001}]%
-        {model}
+        {hiemstra2001using}
 {D. Hiemstra}. 2001.
 \newblock \showarticletitle{Using Language Models for Information Retrieval}.
 \newblock  (2001).
@@ -167,6 +176,19 @@
 \newblock \showarticletitle{PRIS at TREC2011 Micro-blog Track}.
 \newblock  (2011).
 \newblock
+
+
+\bibitem[\protect\citeauthoryear{Manning, Raghavan, and Sch{\"u}tze}{Manning
+  et~al\mbox{.}}{2008}]%
+        {manning2008introduction}
+{C.D. Manning}, {P. Raghavan}, {and} {H. Sch{\"u}tze}. 2008.
+\newblock {\em Introduction to Information Retrieval}.
+\newblock Cambridge University Press.
+\newblock
+\showISBNx{9780521865715}
+\showLCCN{2008001257}
+\showURL{%
+\url{https://books.google.co.uk/books?id=GNvtngEACAAJ}}
 
 
 \bibitem[\protect\citeauthoryear{Massoudi, Tsagkias, de~Rijke, and
@@ -254,6 +276,16 @@
 {Stephen Robertson} {and} {Hugo Zaragoza}. 2009.
 \newblock {\em The probabilistic relevance framework: BM25 and beyond}.
 \newblock Now Publishers Inc.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Robertson, Walker, Jones, Hancock-Beaulieu,
+  and Gatford}{Robertson et~al\mbox{.}}{1995}]%
+        {robertson1995okapi}
+{Stephen~E Robertson}, {Steve Walker}, {Susan Jones}, {Micheline~M
+  Hancock-Beaulieu}, {and} {Mike Gatford}. 1995.
+\newblock \showarticletitle{Okapi at TREC-3}.
+\newblock {\em NIST SPECIAL PUBLICATION SP\/} (1995), 109--109.
 \newblock
 
 
