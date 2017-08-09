@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2014.5.26)  2 AUG 2017 02:22
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2014.5.26)  2 AUG 2017 16:51
 entering extended mode
 **JournalChapter1.tex
 (E:\dropbox\Dropbox\Journal_Chapter1\JournalChapter1.tex
@@ -1059,7 +1059,10 @@ LaTeX Warning: No positions in optional float specifier.
 
 LaTeX Font Info:    Font shape `OT1/pnc/bx/it' in size <10> not available
 (Font)              Font shape `OT1/pnc/b/it' tried instead on input line 30.
-[7] [8]
+[7]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 81.
@@ -1145,20 +1148,17 @@ Missing character: There is no p in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no p in font nullfont!
 Missing character: There is no t in font nullfont!
-) [12]
+)
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 256.
 
+[12]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 284.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [13]
-(E:\dropbox\Dropbox\Journal_Chapter1\dlmfigureTFDL2500.tex
+[13] (E:\dropbox\Dropbox\Journal_Chapter1\dlmfigureTFDL2500.tex
 Missing character: There is no p in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no p in font nullfont!
@@ -1199,16 +1199,19 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no p in font nullfont!
 Missing character: There is no t in font nullfont!
 ) [15]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [16]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 386.
 
-[16]
+[17]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 445.
 
-) (E:\dropbox\Dropbox\Journal_Chapter1\MBModel.tex [17]
+) (E:\dropbox\Dropbox\Journal_Chapter1\MBModel.tex [18]
 (E:\dropbox\Dropbox\Journal_Chapter1\MBRM-GAUSS-TF.tex
 Missing character: There is no p in font nullfont!
 Missing character: There is no t in font nullfont!
@@ -1226,7 +1229,7 @@ Overfull \hbox (6.35994pt too wide) in paragraph at lines 59--71
 []$[]$   $[]$ 
  []
 
-[18]
+[19]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 84.
@@ -1234,7 +1237,7 @@ LaTeX Warning: No positions in optional float specifier.
 ) (E:\dropbox\Dropbox\Journal_Chapter1\Conclusions.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [19])
+ [20])
 (E:\dropbox\Dropbox\Journal_Chapter1\JournalChapter1.bbl
 Underfull \hbox (badness 3343) in paragraph at lines 89--98
 []\OT1/pnc/m/n/8 Firas Damak, Karen Pinel-Sauvagnat, Mo-hand Boughanem, and Gui
@@ -1248,9 +1251,9 @@ h. In \OT1/pnc/m/it/8 Pro-ceed-ings of the 28th An-
  []
 
 
-Underfull \vbox (badness 7468) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [20]
+ [21]
 Underfull \hbox (badness 7576) in paragraph at lines 305--312
 []\OT1/pnc/m/n/8 B. Shar-ifi, M.-A. Hut-ton, and J.K. Kalita. 2010. Ex-per-i-me
 nts in Mi-croblog Sum-ma-riza-tion.
@@ -1262,16 +1265,12 @@ Underfull \hbox (badness 5077) in paragraph at lines 305--312
 Sec-ond In-ter-na-tional Con-fer-ence on\OT1/pnc/m/n/8 . 49--56.
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [21])
-[22] (E:\dropbox\Dropbox\Journal_Chapter1\JournalChapter1.aux
+) [22] (E:\dropbox\Dropbox\Journal_Chapter1\JournalChapter1.aux
 (E:\dropbox\Dropbox\Journal_Chapter1\bm25TFDL.aux)) ) 
 Here is how much of TeX's memory you used:
  27565 strings out of 493921
  669587 string characters out of 3144873
- 2515942 words of memory out of 3000000
+ 2519837 words of memory out of 3000000
  30263 multiletter control sequences out of 15000+200000
  45867 words of font info for 104 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
@@ -1308,7 +1307,7 @@ ts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
 ntrsbk/uncb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/ncntrsbk/u
 ncbi8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/ncntrsbk/uncr8a.p
 fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on JournalChapter1.pdf (22 pages, 605230 bytes).
+Output written on JournalChapter1.pdf (22 pages, 605586 bytes).
 PDF statistics:
  205 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
